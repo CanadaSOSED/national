@@ -1,0 +1,27 @@
+[01-Jul-2015 10:35:43] PHP Fatal error:  Call to undefined function add_action() in /home/sosvolunteertrip/public_html/wp-includes/author-template.php on line 471
+[01-Jul-2015 10:35:46] PHP Fatal error:  Class 'Walker' not found in /home/sosvolunteertrip/public_html/wp-includes/nav-menu-template.php on line 16
+[29-Jun-2016 00:22:00] PHP Fatal error:  Class 'Walker' not found in /home/sosvolunteertrip/public_html/wp-includes/nav-menu-template.php on line 16
+[29-Jun-2016 00:22:48] PHP Fatal error:  Class 'Walker' not found in /home/sosvolunteertrip/public_html/wp-includes/class-walker-page.php on line 17
+[29-Jun-2016 00:22:51] PHP Fatal error:  Class 'Walker' not found in /home/sosvolunteertrip/public_html/wp-includes/class-walker-page-dropdown.php on line 17
+[29-Jun-2016 00:23:07] PHP Fatal error:  Class 'Walker' not found in /home/sosvolunteertrip/public_html/wp-includes/class-walker-comment.php on line 17
+[28-Jul-2016 11:06:02] PHP Fatal error:  Class 'Walker' not found in /home/sosvolunteertrip/public_html/wp-includes/nav-menu-template.php on line 16
+[28-Jul-2016 11:06:45] PHP Fatal error:  Class 'Walker' not found in /home/sosvolunteertrip/public_html/wp-includes/class-walker-page.php on line 17
+[28-Jul-2016 11:06:48] PHP Fatal error:  Class 'Walker' not found in /home/sosvolunteertrip/public_html/wp-includes/class-walker-page-dropdown.php on line 17
+[28-Jul-2016 11:06:53] PHP Fatal error:  Class 'Walker' not found in /home/sosvolunteertrip/public_html/wp-includes/class-walker-comment.php on line 17
+[28-Jul-2016 11:07:20] PHP Warning:  require_once(ABSPATHWPINC/customize/class-wp-customize-nav-menus-panel.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/sosvolunteertrip/public_html/wp-includes/class-wp-customize-panel.php on line 389
+[28-Jul-2016 11:07:20] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'ABSPATHWPINC/customize/class-wp-customize-nav-menus-panel.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/sosvolunteertrip/public_html/wp-includes/class-wp-customize-panel.php on line 389
+[09-Oct-2016 22:47:55] PHP Fatal error:  Class 'Walker' not found in /home/sosvolunteertrip/public_html/wp-includes/nav-menu-template.php on line 16
+[09-Oct-2016 22:48:00] PHP Fatal error:  Class 'Walker' not found in /home/sosvolunteertrip/public_html/wp-includes/class-walker-page.php on line 17
+[09-Oct-2016 22:48:04] PHP Fatal error:  Class 'Walker' not found in /home/sosvolunteertrip/public_html/wp-includes/class-walker-page-dropdown.php on line 17
+[30-Dec-2016 12:53:42] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/sosvolunteertrip/public_html/wp-includes/registration-functions.php on line 7
+[03-Jan-2017 06:49:01] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/sosvolunteertrip/public_html/wp-includes/registration-functions.php on line 7
+[03-Jan-2017 07:27:57] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/sosvolunteertrip/public_html/wp-includes/registration-functions.php on line 7
+[11-Jan-2017 03:57:48] PHP Warning:  require(ABSPATHWPINC/option.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/sosvolunteertrip/public_html/wp-includes/functions.php on line 8
+[11-Jan-2017 03:57:48] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'ABSPATHWPINC/option.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/sosvolunteertrip/public_html/wp-includes/functions.php on line 8
+[12-Feb-2017 05:52:41] PHP Fatal error:  Class 'Walker' not found in /home/sosvolunteertrip/public_html/wp-includes/nav-menu-template.php on line 16
+[12-Feb-2017 05:53:14] PHP Warning:  require_once(ABSPATHWPINC/customize/class-wp-customize-nav-menus-panel.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/sosvolunteertrip/public_html/wp-includes/class-wp-customize-panel.php on line 389
+[12-Feb-2017 05:53:14] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'ABSPATHWPINC/customize/class-wp-customize-nav-menus-panel.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/sosvolunteertrip/public_html/wp-includes/class-wp-customize-panel.php on line 389
+[12-Feb-2017 05:53:16] PHP Fatal error:  Class 'Walker' not found in /home/sosvolunteertrip/public_html/wp-includes/class-walker-page.php on line 17
+[12-Feb-2017 05:53:17] PHP Fatal error:  Class 'Walker' not found in /home/sosvolunteertrip/public_html/wp-includes/class-walker-page-dropdown.php on line 17
+[10-Mar-2017 01:46:13] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/sosvolunteertrip/public_html/wp-includes/rss-functions.php on line 8
+[25-Mar-2017 20:17:10] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/sosvolunteertrip/public_html/wp-includes/registration-functions.php on line 7

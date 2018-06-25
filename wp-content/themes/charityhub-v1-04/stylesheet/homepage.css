@@ -1,0 +1,358 @@
+	/* Remove banner thing from page */
+.gdlr-page-title-wrapper{
+	display: none;
+}
+
+/* Remove white space between header and slider */
+.section-container.container{
+	padding-top: 30px;
+}
+
+/*@font-face{
+	font-family: "Avenir";
+	src: url("../fonts/avenir/book.otf");
+}
+@font-face{
+	font-family: "Avenir";
+	src: url("../fonts/avenir/light.otf");
+	font-weight: lighter;
+}
+@font-face{
+	font-family: "Avenir";
+	src: url("../fonts/avenir/bold.otf");
+	font-weight: bold;
+}*/
+
+@font-face{
+	font-family: roman;
+	src: url("../fonts/avenir/book.otf");
+}
+@font-face{
+	font-family: light;
+	src: url("../fonts/avenir/light.otf");
+}
+@font-face{
+	font-family: black;
+	src: url("../fonts/avenir/bold.otf");
+}
+
+body #homepage{
+	font-family: roman;
+}
+
+body.page{
+	padding: 0;
+}
+
+b{
+	font-weight: normal;
+	font-family: black;
+}
+
+.darkblue{
+	color: #10425b;
+}
+
+.lightblue{
+	color: #50bbf8;
+}
+
+.page{
+	padding: 80px 0 40px 0;
+}
+
+#carousel.page{
+	padding: 0;
+}
+
+.page h1{
+	font-size: 24pt;
+	font-family: black;
+	margin: 0;
+}
+
+.page h2{
+	font-size: 14pt;
+	font-family: roman;
+	margin: 0;
+}
+
+#homepage .page p{
+	font-size: 12pt;
+	font-family: roman;
+	color: #404040;
+	margin: 1em 0;
+	line-height: 1.8em;
+}
+
+.btn{
+	font-family: black;
+	border-radius: 4px;
+	color: white;
+	border: none;
+	padding: 12pt 18pt;
+	background-color: #50bbf8;
+}
+
+.btn:hover{
+	color: white;
+	background-color: #71cbff;
+}
+
+/* CAROUSEL */
+.carousel-overlay{
+	background: url('../images/home/map-bg.png') right center no-repeat;
+	z-index: 10;
+	pointer-events:none; 
+	position: absolute;
+	background-color: #05151d;
+	opacity: 0.85;
+	height: 100%;
+	width: 100%;
+}
+
+@media (max-width: 992px){
+	.carousel-overlay{
+		background-image: none;
+	}
+}
+
+.carousel-control.left, .carousel-control.right{
+	color: rgba(255,255,255,0.9);
+	max-width: 150px;
+	z-index: 20;
+}
+
+.carousel-inner{
+}
+
+.carousel-inner img{
+	width: 100%;
+}
+
+.carousel-caption{
+	position: absolute;
+	top: 10%;
+	left: 15%;
+	text-align: left;
+	max-width: 550px;
+}
+
+.carousel-caption h1{
+	font-size: 24pt;
+}
+
+.carousel-caption h2{
+	font-size: 12pt;
+}
+
+.carousel p{
+	color: white;
+	line-height: 2em;
+}
+
+/* VOLUNTEER */
+#volunteer .container{
+	max-width: 750px;
+}
+
+#volunteer .container p{
+	line-height: 2.2em;
+}
+
+
+/* CURIOUS? SECTION */
+#curious{
+	background: linear-gradient(rgba(1, 28, 41,0.85), rgba(1, 28, 41, 0.85)), url('../images/home/curious.jpg') center center;
+	color: white;
+	background-size: cover;
+}
+
+#curious iframe{
+	width: 100%;
+}
+
+/* WHERE WE WORK */
+#where-we-work{
+	background: url('../images/home/map.png') center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#where-we-work #countries ul{
+	list-style: none;
+	text-transform: uppercase;
+	font-family: black;
+	font-size: 10pt;
+	line-height: 4em;
+}
+
+#where-we-work #countries ul li img{
+	max-width: 50px; 
+	min-width: 50px;
+	border: 1px solid gray;
+	margin-right: 10px;
+}
+
+/* TRIPS */
+#trips{
+	background-color: #eee;
+	padding: 0;
+}
+
+#trips.page .left{
+	padding: 80px 0;
+}
+
+#trips #stats{
+	width: 205px;
+	margin: auto;
+}
+
+#trips #stats .right{
+	margin-left: 20px;
+}
+
+#trips #stats .right span.darkblue{
+	font-size: 12pt;
+	height: 72px;
+}
+
+#trips #stats .row{
+	font-size: 18pt;
+	margin: 50px 0;
+	display: table;
+}
+
+
+@media (min-width: 768px){
+	#trips [class*="col-"]{
+		float: none;
+		display: table-cell;
+		vertical-align: top;
+	}
+
+	#joel-quote .right{
+		margin-top: 500px;
+	}
+}
+
+#trips .row b.lightblue{
+	font-size: 24pt;
+}
+
+#trips #stats .row div{
+	float: left;
+}
+
+#joel-quote{
+	padding: 20px 24px;
+	background: url('../images/home/joel.jpg') center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 400px;
+}
+
+#joel-quote .right{
+	margin-top: 420px;
+}
+
+#homepage #joel-quote p, #homepage #joel-quote{
+	color: white;
+	text-align: right;
+	margin-bottom: 0;
+}
+
+/* OUR IMPACT */
+
+#our-impact{	
+	padding-top: 60px;
+	background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url('../images/home/our-impact.jpg') top center;
+	background-size: cover;
+	min-height: 780px;
+}
+#our-impact h1{
+	font-size: 36pt;
+}
+
+#our-impact h2{
+	font-size: 18pt;
+}
+
+#our-impact p{
+	margin: auto;
+	max-width: 740px;
+	line-height: 2em;
+}
+
+.page#our-impact p{
+	margin: auto;
+}
+
+#our-impact .row{
+	padding: 30px 0;
+}
+
+#our-impact .row .circle{
+	padding: 66px 0;
+	margin: auto;
+	text-align: center;
+	font-size: 16pt;
+	width: 180px;
+	height: 180px;
+	border-radius: 180px;
+	font-size: 12pt;
+
+	line-height: 1.5em;
+	font-family: black;
+	font-size: 14pt;
+
+	background-color: rgba(255,255,255,1);
+	border: 1px dotted #50bbf8;
+	box-shadow:
+  		0 0 0 0px #50bbf8,
+  		0 0 0 3px white,
+ 		0 0 0 6px #50bbf8;
+ }
+
+#our-impact .row .circle b{
+	font-size: 24pt;
+	letter-spacing: -1px;
+	color: #50bbf8;
+}
+
+#our-impact .circle-label{
+	line-height: 180px;
+	font-size: 16pt;
+	font-family: black;
+	color: #444;
+}
+
+@media (max-width: 991px){
+	#our-impact{
+
+	}
+	
+	#our-impact .circle-label{
+		line-height: 80px;
+	}
+}
+
+
+
+/* Footer font to open sans*/
+body:not(#homepage), header, footer{
+	font-family: "Open Sans";
+}
+
+/* Remove padding for containers oustide #homepage */
+.container:not(#homepage){
+	padding-right: 0;
+	padding-left: 0;
+	width: auto;
+}
+
+.gdlr-fluid-video-wrapper{
+	width: auto;
+	height: auto;
+}

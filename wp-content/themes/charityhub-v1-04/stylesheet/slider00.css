@@ -1,0 +1,113 @@
+#gallery 
+{
+    width:715px;
+	height:100px;
+    margin: 0 auto;
+    padding:0px;
+    border:0px;
+    background:transparent url(loading0.gif) no-repeat 50% 50%;
+    box-shadow: 0px 1px 11px #CCCCCC;
+    
+    /* Do not alter the below settings */
+    white-space:nowrap;
+    position:relative;
+    font-size:0px;
+}
+#gallery>* {display:none;}
+  
+/*-------- div.item is each thumbnail's wrapper created by the javascript ------*/
+#gallery div.item 
+{
+background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent !important;
+    background-image: url("outreacq.png");
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    border: medium none !important;
+    display: block;
+    float: left;
+    height: 94px !important;
+    margin: 2px !important;
+    padding: 0 !important;
+    width: 98px !important;
+}
+
+#gallery img 
+{
+    border:none;
+	    height: 65px;
+    padding: 15px;
+    width: 69px;
+}
+
+
+/*---------built-in navigation buttons-------*/
+#gallery .navPrev, #gallery .navNext, #gallery .navPlay, #gallery .navPause 
+{
+    width:16px; height:22px; position:absolute;  
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/js/jslider/psd_arrows3.png); 
+    display:inline-block; z-index:5; cursor:pointer;
+}
+#gallery .navPrev {background-position:-2px -3px;top:40px;left:-30px;width:14px; height:28px;}
+#gallery .navPrev:hover {background-position:-2px -31px;}
+#gallery .navPrevDisabled, #gallery .navPrevDisabled:hover {background-position:0 0;cursor:default;}
+
+#gallery .navNext {background-position:-14px -3px;top:40px;right:-30px;width:14px; height:28px;} 
+#gallery .navNext:hover {background-position:-14px -31px;} 
+#gallery .navNextDisabled, #gallery .navNextDisabled:hover {background-position:-16px 0; cursor:default;} 
+
+#gallery .navPause, #gallery .navPlay {left:360px;top:105px;}
+#gallery .navPause {background-position:-8px -82px;width:13px; height:24px;} 
+#gallery .navPause:hover {background-position:-8px -59px;} 
+#gallery .navPlay {background-position:-19px -82px;width:13px; height:24px;} 
+#gallery .navPlay:hover {background-position:-19px -57px;} 
+
+.navPrev, .navPlay, .navPause, .navNext 
+{
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -o-user-select: none;
+   user-select: none;
+}
+       
+/*---------built-in navigation bullets--------*/
+/* Note: the navBullets won't be available when "scrollByEachThumb" was set to false in the Javascript.*/
+#gallery .navBullets
+{
+    display:none;
+}
+
+/*--------- class1 that is for the slide with HTML content------------*/
+.class1 
+{
+    width:130px;
+    height: 80px;
+    background:#444;
+    text-align:center;
+    color:White;
+    font:normal 11px/14px Arial;
+    white-space:normal;
+}
+.class1 p
+{
+    margin-top:0;
+    margin-bottom:6px;
+    padding-top:6px;
+    font:bold 13px Verdana;
+    color:#F90;
+}
+
+
+/* --------- Others ------- */
+#gallery
+{
+	transform: translate3d(0,0,0);
+    -ms-transform:translate3d(0,0,0);
+    -moz-transform:translate3d(0,0,0);
+    -o-transform:translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+}

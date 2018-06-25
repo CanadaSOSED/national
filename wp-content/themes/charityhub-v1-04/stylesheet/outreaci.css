@@ -1,0 +1,83 @@
+.tutors2
+{
+	color:#17475f !important;
+	text-align:center;
+	width:110px;
+	margin:0;}
+.main-banner-top1 {
+    background: url("http://canada.soscampus.com/wp-content/themes/sos/images/top-header-outreach.jpg") no-repeat scroll 0 0 transparent;
+    float: left;
+    width: 942px;
+}
+.main-rpt1 {
+    float: left;
+    margin-top: 35px;
+}
+.main-rpt2
+{
+background:url(http://canada.soscampus.com/wp-content/themes/sos/images/repeater-body.jpg) repeat-y;
+float:left;
+}
+.profile-popup1-inside{ 
+	float: left;
+	position: absolute;
+	top:40px;
+}
+img.btn_close { Position the close button
+	float: right; 
+	position:absolute;
+	top:-10px;
+	right:-30px;
+}
+#mask2 {
+	display: none;
+	background: #000; 
+	position: fixed; left: 0; top: 0; 
+	z-index: 10;
+	width: 100%; height: 100%;
+	opacity: 0.8;
+	z-index: 999;
+}
+.close2
+{
+cursor: pointer;
+    float: right;
+    height: 16px;
+    margin-right: -14px;
+    margin-top: -5px;
+    padding-left: 7px;
+    text-align: center;
+    width: 16px;
+}
+.close2 span
+{
+cursor: pointer;
+    display:block;
+    text-align: center;
+}
+.main-bottom-margin2
+{
+float: left;
+}
+.bottom-div2
+{
+background:url(http://canada.soscampus.com/wp-content/themes/sos/images/ourtrips-bg.png) no-repeat;
+float: left;
+    height: 145px;
+   
+    padding: 20px 20px 20px 30px;
+    width: 940px;
+}
+.bottom-div2 h2
+{
+color: #FFFFFF;
+    font-size: 23px;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+.bottom-div2 p
+{
+color:#fff;
+font-family: myriad pro;
+}

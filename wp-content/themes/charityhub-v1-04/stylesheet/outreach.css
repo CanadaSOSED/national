@@ -1,0 +1,729 @@
+#trip{
+	margin-top:20px;
+}
+.main-banner-content
+{
+margin:auto;
+width:942px;
+height:500px;
+}
+.space
+{
+	height:auto;
+	margin:auto;
+	width:942px;
+}
+.space3
+{
+	height:2000px;
+	margin:auto;
+	width:942px;
+}
+.banner-wrapper2
+{
+	background:#17475F; 
+	background-size:100% 526px;
+	min-height: 505px;
+    margin-top: 48px;
+	padding-top:21px;
+    position: relative;
+    width: auto;
+}
+.banner-wrapper3
+{
+	background:white;
+	background-size:100% 526px;
+	min-height: 505px;
+    margin-top: 48px;
+	padding-top:21px;
+    position: relative;
+    width: auto;
+}
+.banner-bottom2
+{
+	background:url(http://sosvolunteertrips.org/wp-content/themes/charityhub-v1-04/images/banner-b.png) no-repeat;
+	background-size:100% 100%;
+	margin-bottom:-3px;
+	height:20px;
+	width:auto;
+}
+.banner-top2
+{
+    margin:auto;
+	height:auto;
+    width: 942px;
+}
+.banner-top-left2
+{
+	float:left;
+	height:1200px;
+	margin-top:21px;
+	margin-right:10px;
+	width:178px;
+}
+.banner-top-left3
+{
+	float:left;
+	height:375px;
+	margin-top:21px;
+	margin-left:21px;
+	margin-right:10px;
+	width:178px;
+}
+
+.banner-top-left2 h2
+{ 
+	margin-top:20px;
+	font-family:myriad_pro_lightbold;
+}
+.banner-top-video-back
+{
+	background:url(http://sosvolunteertrips.org/wp-content/themes/charityhub-v1-04/images/banner-left.png) no-repeat;
+	float: right;
+    height: 375px;
+	margin-top:21px;
+    margin-right: 21px;
+    width: 523px;
+	padding-top:21px;
+}
+.banner-top-video-back p
+{
+	color:#fff;
+	float:left;
+	margin-left: 20px;
+	font-family: myriad pro;
+	font-size:15px;
+}
+.banner-video
+{
+	height: 307px;
+    margin: 0 21px;
+    width: 481px;
+}
+div.tabscontainer2 {background:url(http://sosvolunteertrips.org/wp-content/themes/charityhub-v1-04/images/left_mep.png) repeat-y top left; width:1226px; margin:auto;
+border: 5px;
+            border-radius: 4px;
+            -moz-border-radius: 4px;
+            -khtml-border-radius: 4px;
+            -webkit-border-radius: 4px;}
+div.tabscontainer2 div.tabs2{list-style:none; width:230px; cursor: pointer; float:left; left: 0px; z-index: 2;}
+div.tabscontainer2 div.curvedContainer2{margin-left: 230px; width:754px;}
+div.tabscontainer2 div.curvedContainer2 .tabcontent2{float:left; width:994px; font:12px "myriad_pro_lightbold";}
+
+.tabcontent2 a{color:#236585;}
+.tabcontent2
+{
+font:14px/19px "myriad pro" !important; color:#2f2f2f; 
+}
+.tabcontent2 h2 {font:bold 23px/28px "myriad pro"; color:#1c465e; margin-bottom:0px;}
+.tabcontent2 h6 {font: 18px/26px "myriad_pro_lightbold"; color:#236585; margin-top:10px;  font-style:italic; clear:both; border-bottom: 1px dashed #184760;}
+.tabcontent2 #h6 {float:left;*float:none;font: 18px/26px "myriad_pro_lightregular"; color:#236585; margin:10px 0 0; *margin-top:64px; font-style:italic; }
+/*.tabcontent #h6 {float:none;font:bold 18px/26px "myriad_pro_lightregular"; color:#236585; margin:38px 0 0;  font-style:italic;}*/
+
+.tabs-content{
+	background:url(http://sosvolunteertrips.org/wp-content/themes/charityhub-v1-04/images/banner-top.png) no-repeat;
+	background-size:100% 100%;
+	float:left;
+	width:994px;
+	height:415px;} 
+.tabs-content2{
+	background:url(http://sosvolunteertrips.org/wp-content/themes/charityhub-v1-04/images/banner-top.png) no-repeat;
+	background-size:100% 100%;
+	float:left;
+        width:942px;
+	padding:21px;
+	height:auto;}
+.tabs-content3{
+	background: white;
+	background-size:100% 100%;
+	float:left;
+	width:942px;
+	padding:21px;
+	height:auto;}
+.SUBPAGE { 
+	border:solid; 
+	border-width:thin; 
+	border-color:#999999;
+	margin:10px auto; 
+	width:942px;
+	min-height:406px;}
+/* SUB pages main content */
+.SUBPAGEleftMENU { 
+	float: left;
+	width:214px;
+	height:365px;
+	margin:20px 0 20px 20px;}
+.SUBmenuitems  {
+	font-family:Trebuchet MS;
+	font-size:12px;}
+.SUBmenuitem { 
+	padding-left: 5px;
+	width:209px; 
+	background:#1e639f url(http://sosvolunteertrips.org/wp-content/themes/charityhub-v1-04/images/bg.gif) repeat-x 0 0; 
+	border-bottom:1px solid #c1c1c2;} 
+
+.SUBmenuitem a:link,
+.SUBmenuitem a:visited
+ {line-height:23px;   text-decoration: none; color:#FFFFFF; }
+.SUBmenuitem a:hover {text-decoration: none; color:#fed025; }
+.SUBPAGErightCONTENT { 
+	float: right; 
+	width:688px;
+	height:365px;
+	margin:20px 20px 20px 0;}
+.SUBPAGEmainimg {
+	float:right;
+	width:688px;
+	height:365px;
+	-o-background-size:100&#37; 100%;             /*  Opera  */
+    -webkit-background-size:100% 100%;        /*  Safari  */
+    -khtml-background-size:100% 100%;         /*  Konqueror  */
+    -moz-background-size:100% 100%;           /*not working in Firefox as yet */}
+.SUBPAGEimg{
+	float:right;
+	width:688px;
+	-o-background-size:100&#37; 100%;             /*  Opera  */
+    -webkit-background-size:100% 100%;        /*  Safari  */
+    -khtml-background-size:100% 100%;         /*  Konqueror  */
+    -moz-background-size:100% 100%;           /*not working in Firefox as yet */}
+.SUBPAGEvideoout{
+	position:relative;}
+.SUBPAGEvideoin{
+	position: absolute; 
+	top: 49px;
+	left: 90px; 
+	z-index: 10;}
+div.tabs2 div.tab{display: block; height:35px; border-bottom:1px solid #d6d6d2; position: relative; color: #3c3c3c;}
+div.tabs2 div.link{padding-left:10px; font: 13px/36px "myriad_pro_lightbold";}
+div.tabs2 div.tab.selected{color: #ffffff; border-right-color: #aeaeaa;}
+div.tabs2 div.tab.selected{background: url(http://sosvolunteertrips.org/wp-content/themes/charityhub-v1-04/images/left_men.png) repeat-x; border-right-color: #7c7c77;}
+div.tabs2 div.tab div.arrow{position: absolute; background:url(http://sosvolunteertrips.org/wp-content/themes/charityhub-v1-04/images/left_meo.png) no-repeat; height:36px; width: 17px; left: 100%; top: 0px; display: none;}
+div.tabs2 div.tab.selected div.arrow{display: block;}
+.banner-top-right2
+{
+	float:right;
+	margin-right:5px;
+}
+.tab-content-img
+{
+	width:100%;
+	height:50%;
+}
+.banner-top-right-title h2
+{
+	color: #FFFFFF;
+	width: 374px;
+    font-size: 31px;
+    margin-top: 0;
+	margin-bottom:20px;
+	text-transform: uppercase;
+}
+.banner-top-right-para
+{
+	color: #fff;
+	width: 374px;
+	font-family:myriad pro;
+    font-size: 18px;
+    font-style: italic;
+    height: auto;
+	margin-right:5px;
+}
+.trips-content-1{
+	height:1200px;
+}
+.popup-profile1
+{
+	font: 14px "myriad_pro";
+	height:1261px;
+	width:950px;		
+	overflow:auto;
+}
+img.img-outreach-bg-large{
+	position:absolute;
+	top: 10px;
+	left: 10px;
+
+}/*
+	*
+	*heading blue bar "we have an upcoming trip..." START
+	*
+*/
+.outreach-heading-bar{	display:block;	background:url(http://sosvolunteertrips.org/wp-content/themes/charityhub-v1-04/images/heading-.png) no-repeat transparent;	width:100%;	height:100px;	
+}.outreach-box-wrapper { width:901px;margin:0 auto;}
+.outreach-heading-bar-text{
+	padding: 5px 30px 0px 30px;	width:848px;
+}
+.outreach-heading-bar-text h4{
+	color:white;
+	font:bold 20px/30px "myriad pro";
+	text-transform:uppercase;		margin:15px 8px;
+}
+.img-apply-today-btn{
+	padding:10px;
+}
+.heading-bar-left{
+	float:left;	width:715px;
+}
+.heading-bar-mid{
+	float:right;	margin-right:5px;
+}#go-trip {    background: url("http://sosvolunteertrips.org/wp-content/themes/charityhub-v1-04/images/go-on-tr.png") no-repeat scroll 0 0 transparent;    border: 0 none;    cursor: pointer;    height: 40px;    margin-left: 59px;	margin-top:15px;    width: 123px;}
+.heading-bar-right{
+	float:left;
+}
+.span-interested{
+	color:#90D6F1;
+	font:myriad_pro;
+	font-size:18px;
+	text-transform:uppercase;
+}
+.span-or{
+	color:#99BBC9;
+	font:myriad_pro;
+	font-size:14px;
+	text-transform:lowercase;
+}.outreach_read_more { 	color:#035797;		text-decoration:none;		font:normal 13px/18px "myriad pro";	}
+.span-learn-more{
+	color:#90D6F1;
+	font:myriad_pro;
+	font-size:16px;
+	text-transform:uppercase;
+}
+/*	
+	*
+	heading blue bar END
+	*
+	*
+	intro text "SOS has been working hard..." START
+	*
+*/
+.outreach-intro-bg{	background:url(http://sosvolunteertrips.org/wp-content/themes/charityhub-v1-04/images/outreaci.png) no-repeat transparent;	width:100%;	height:132px;	margin-top:-10px;
+}.outreaach-top-spacer {	width:100%;height:270px;}
+.outreach-intro-bg p{
+	color:#2D2D2D;
+	font:normal 19px/24px "myriad pro";	font-style:italic;
+}
+.outreach-intro-bg h5{
+	color:#164861;
+	font-family:myriad_pro;
+	font-size:15px;
+	margin: 0;
+}
+.outreach-intro-text{
+	padding:10px 45px 0px;
+	padding-top:20px;
+}
+/*	
+	*
+	intro text END
+	*
+	*
+	pictures of community trips START
+	*
+*/
+.outreach-pics{	background:url(http://sosvolunteertrips.org/wp-content/themes/charityhub-v1-04/images/outreacj.png) no-repeat transparent;	width:100%;	height:197px;	margin-top:20px;
+}
+.outreach-pics-text{
+	padding:15px 30px 0px 30px;
+}.outreach-pics-text h2 {	text-transform:uppercase;	margin:0px;}.outreach-bottom-links { 	width:100%;	margin:10px 0px 0px 0px;}.outreach-bottom-links p {	margin:0px;	padding:0px;	font:normal 13px/18px "myriad pro";	color:#5f5f5f;}.outreach-bottom-links p a{	font:normal 13px/18px "myriad pro";	color:#17475f;	text-decoration:underline;}.outreach-bottom-links p a:hover {	text-decoration:none;}
+.outreach-pics h6{
+	color:#17475F;
+	font-family:myriad_pro;
+	text-transform:uppercase;
+	font-size:18px;
+}
+.outreach-pics h4{
+	color:#164861;
+	font-family: "myriad pro";
+	font-size:12px;
+	margin: 0;
+}
+.span-outreach-pics-text{
+	color:#2f2f2f;		font:normal 14px/18px "myriad pro";
+}
+/*	
+	*
+	pictures of community END
+	*
+	*
+	project details START
+	*
+*/
+.img-proj-det-bg{
+	width:440px;
+	height:65%;
+}
+.outreach-proj-det{	background: url(http://sosvolunteertrips.org/wp-content/themes/charityhub-v1-04/images/outreack.png) no-repeat transparent;	width:440px;	height:347px;	float:left;
+}
+.outreach-proj-det-box{
+	width:420px;
+	padding:15px 10px 0 10px;
+}
+.span-proj-det{
+	color:#17475F;
+	
+	font: bold 20px "myriad_pro_lightbold";	padding-left:8px;
+}
+.outreach-proj-det-partnering{
+	width:420px;		padding:3px 10px;
+}
+.span-left{
+	color:#17475F;
+	font:bold 14px/19px "myriad pro";
+}.outreach-proj-det-wrap,.outreach-trip-details-wrap {	margin:6px 0px 0px 0px;}
+.outreach-proj-det-partnering-title{
+	width:160px;
+	height:20px;		display:inline;
+}
+.outreach-proj-det-partnering-info{
+	width:255px;
+	height:20px;		float:right;
+}
+.span-right{
+	color:#2F2F2F;
+	font-size:14px;
+}
+/*	
+	*
+		proj det END
+	*
+	*
+		proj desc START
+	*
+*/
+.outreach-proj-desc{
+	width:420px;
+	height:40px;		clear:both;		padding:3px 10px;
+}
+.outreach-proj-desc-title{
+	width:150px;
+	height:40px;		display:inline;
+}
+.outreach-proj-desc-info{
+	width:255px;
+	height:40px;		float:right;
+}
+/*	
+	*
+		proj desc END
+	*
+	*
+		proj details START
+	*
+*/
+.outreach-proj-details{
+	width:420px;
+	height:200px;		clear:both;		
+}
+.outreach-proj-details-title{
+	width:150px;
+	height:200px;		display:inline;
+}
+.outreach-proj-details-info{
+	width:420px;
+	height:200px;			padding:0 5px 0 0;
+}
+.span-right1{
+	color:#2F2F2F;
+	font:normal 13px/16px "myriad pro";	
+}
+.span-bold{	font:bold 14px/18px "myriad pro";	color:#2f2f2f;
+}
+/*	
+	*
+		proj details END
+	*
+	*
+		START
+	*
+*/
+.img-proj-trip-details-bg{
+	width:440px;
+	height:65%;
+}
+.outreach-trip-details{	background: url(http://sosvolunteertrips.org/wp-content/themes/charityhub-v1-04/images/outreacl.png) no-repeat transparent;
+	float:right;	width:440px;	height:347px;
+}.outreach-go-trip {	 width:100%;	 margin:0px;	 height:50px;}.outreach-go-trip p { float:right; margin:0px 15px 0px 0px;}
+.outreach-trip-details-box{
+	width:420px;
+	padding:15px 10px 0 10px;
+}.outreach-desc-boxs { width:100%;height:347px;margin:15px 0px 0px 0px;}
+.span-trip-details{
+	
+	
+	color:#17475F;
+	
+	font: bold 20px "myriad_pro_lightbold";	padding-left:8px;
+}
+.outreach-trip-date{
+	width:420px;
+	padding:3px 10px;
+}
+.outreach-trip-date-title{
+	width:150px;
+	height:20px;		display:inline;
+}
+.outreach-trip-date-days{
+	width:255px;
+	height:20px;		float:right;
+}
+.outreach-trip-cost{
+	width:420px;
+	height:40px;	padding:3px 10px;		clear:both;
+}
+.outreach-trip-cost-title{
+	width:150px;
+	height:40px;		display:inline;
+}
+.outreach-trip-cost-info{
+	width:255px;
+	height:40px;	float:right;
+}
+.outreach-trip-itinerary{
+	width:420px;
+	height:200px;		clear:both;		padding:3px 10px;
+}
+.outreach-trip-itinerary-title{
+	width:150px;
+	height:200px;		float:left;
+}
+.outreach-trip-itinerary-info{
+	width:250px;
+	height:200px;		float:right;		padding:0 5px 0 0;
+}
+
+
+
+.popup-profile-left
+{
+	float:left;
+	position:absolute;
+	top:0;
+	left:0;
+	height:336px;
+	width:153px;
+	padding:7px;
+}
+.popup-profile-img
+{
+	float: left;
+	height: 141px;
+	margin:10px;
+	border:3px solid white;
+	width: 127px;
+	-o-background-size:100&#37; 100%;             /*  Opera  */
+    -webkit-background-size:100% 100%;        /*  Safari  */
+    -khtml-background-size:100% 100%;         /*  Konqueror  */
+    -moz-background-size:100% 100%;           /*not working in Firefox as yet */
+}
+.popup-profile-rating
+{
+	float: left;
+	margin:7px;
+	color:#17475f !important;
+	font-family: myriad_pro_lightbold;
+	width: 127px;
+    font-size: 22px;
+	padding:3px;
+	border:3px solid black;
+}
+.popup-profile-signup
+{
+	float: left;
+	margin: 30px 7px 7px 7px;
+	width: 139px;
+	height: 56px;
+}
+.popup-profile-right
+{
+	float:right;
+	position:absolute;
+	top:0; 
+	right:0;
+	width:308px;
+	height:336px;
+	padding:7px;
+}
+.popup-profile-name
+{
+	color:#17475f !important;
+	font-family: myriad pro;
+    font-size: 32px;
+}
+.popup-profile-email
+{
+	color:#17475f !important;
+	font-family: myriad pro;
+    font-size: 16px;
+}
+.popup-profile-bio
+{
+	color:#17475f !important;
+	font-family: myriad pro;
+    font-size: 16px;
+}
+.content-side-profile
+{
+	background:url(http://sosvolunteertrips.org/wp-content/themes/charityhub-v1-04/images/white-box-bg.png) no-repeat;
+	padding: 10px 10px 10px 10px;
+    width: 295px;
+	height: 350px;
+	float:left;
+	overflow:auto;}
+.content-side-profile-full
+{
+	background:url(http://sosvolunteertrips.org/wp-content/themes/charityhub-v1-04/images/lady-image-bg-1.png) no-repeat top;
+	float: left;
+	height: 155px;
+	width: 120px;
+	margin:10px 10px 10px 10px;}	
+.content-side-profile-img
+{
+	float: left;
+	height: 115px;
+	width: 100px;
+	margin-top: 10px;
+	padding-bottom: 15px;
+	padding-right: 10px;
+	padding-left: 10px;}
+.content-side-profile-name
+{
+	color: #17475F !important;
+	margin: 0 !important;
+	text-align: center !important;
+	font-size:14px;}
+	
+/*
+
+	test css for the carousel stuff
+	
+*/	
+#blogad
+{
+position:absolute;
+}
+
+
+.video{
+    float: left;
+    width: 84px;
+    height: 84px;
+	line-height: 84px;
+    border: 1px solid #CCC;
+    padding: 2px;
+	background-color: #000000;
+}
+
+#carousel {
+
+    position: relative;
+    overflow-x: auto;
+	overflow-y: hidden;
+    width: 750px;
+    height: 116px;
+}
+
+
+.photos ul {
+    clear: both;
+}
+
+.photos li {
+    display: block;
+    float: left;
+    border: none !important;	padding:0px !important;
+    margin: 0px !important;	width:98px !important;	height:94px !important;	background-color:transparent !important;	background: url(http://sosvolunteertrips.org/wp-content/themes/charityhub-v1-04/images/outreach-photos-bg.png) no-repeat;
+}
+/*h5 {
+    font-size: 11px;
+    color: white;
+    position: absolute;
+    margin-top: 71px;
+    margin-left:19px;
+    width:78px;
+}*/
+h6 {
+    font-size: 14px;
+    color: white;
+}
+
+
+.left {
+    background: url("http://sosvolunteertrips.org/wp-content/themes/charityhub-v1-04/images/left.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 37px;
+    left: 21px;
+    position: absolute;
+    top: 188px;
+    width: 29px;
+    z-index: 10;
+    cursor: pointer;
+    display: none;
+}
+
+.right {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    width: 29px;
+    height: 37px;
+    background: transparent url('http://sosvolunteertrips.org/wp-content/themes/charityhub-v1-04/images/right.png') no-repeat scroll 0 0;
+    right: 21px;
+    top: 188px;
+    cursor: pointer;
+}
+
+.right:hover, .left:hover {
+    background-position: 0px -37px;
+}
+
+#carousel div {
+    display: none;
+    position: absolute;
+}
+
+#carousel div.visible {
+    display: block;
+} 
+.img-carousel{
+	height:65px;
+	width:69px;		padding:15px;
+}	.outreach_proj_desc, .outreach_trip_desc{ height:190px;overflow:hidden;	display:block;}.outreach-profile-bg-top { 	background:url(http://sosvolunteertrips.org/wp-content/themes/charityhub-v1-04/images/outreacm
+) no-repeat transparent;	width:947px;	display:block;}.outreach-profile-bg-bottom { 	background:url(http://sosvolunteertrips.org/wp-content/themes/charityhub-v1-04/images/outreacn.png) no-repeat transparent;	width:947px;	height:13px;	display:block;}.outreaach-top-heading-bar { 	url(http://sosvolunteertrips.org/wp-content/themes/charityhub-v1-04/images/outreaco.png) repeat-y transparent;}.outreaach-top-heading-banner {	background:url(http://sosvolunteertrips.org/wp-content/themes/charityhub-v1-04/images/outreacp.png) no-repeat 8px 0px transparent;}
+
+
+.bodymain{
+    background-color: white;
+    border-radius: 4px;
+    margin: 10px auto;
+    width: 950px;   /*994px-54px=730*/
+}
+
+.h3{
+    color: #236585; 
+    font:lighter 20px "myriad_pro_lightbold";
+    font-size: 14pt;
+}
+
+.question_answers p{
+    color: #2f2f2f;
+    margin: 2px 10px;
+    font: 14px "myriad_pro_lightregular";
+}
+
+.paragraph_detail{
+    color: #2f2f2f;
+    margin: 2px 10px;
+    font: 14px "myriad_pro_lightregular";
+}
+a:link {color:#236585; text-decoration:none;}    /* unvisited link */
+a:visited {color:#236585; text-decoration:none;} /* visited link */
+a:hover {color:#236585; text-decoration:none;}   /* mouse over link */
+a:active {color:#236585; text-decoration:none;}  /* selected link */
+
+
+
+
+
+
+
+

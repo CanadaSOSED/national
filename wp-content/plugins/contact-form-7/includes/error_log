@@ -1,0 +1,4 @@
+[04-Apr-2017 13:01:10] PHP Fatal error:  Call to undefined function add_action() in /home/sosvolunteertrip/public_html/wp-content/plugins/contact-form-7/includes/upgrade.php on line 3
+[04-Apr-2017 13:01:12] PHP Fatal error:  Call to undefined function add_action() in /home/sosvolunteertrip/public_html/wp-content/plugins/contact-form-7/includes/mail.php on line 207
+[04-Apr-2017 13:01:15] PHP Fatal error:  Call to undefined function add_action() in /home/sosvolunteertrip/public_html/wp-content/plugins/contact-form-7/includes/controller.php on line 3
+[04-Apr-2017 13:01:24] PHP Fatal error:  Call to undefined function add_action() in /home/sosvolunteertrip/public_html/wp-content/plugins/contact-form-7/includes/rest-api.php on line 3

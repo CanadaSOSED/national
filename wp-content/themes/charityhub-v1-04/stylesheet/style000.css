@@ -1,0 +1,3395 @@
+@charset "utf-8";
+/* CSS Document Gorav Dhamija*/
+
+
+
+
+.rate-stars-box{
+    float: left;
+    position: relative;
+    display: inline;
+    width: 100px;
+    border: 1px #A1A5EE solid;
+    height: 22px;
+/*    overflow: hidden;*/
+}
+.rate-fill-star-box{
+    position: relative;
+    display: inline;
+    width: 0px;
+    background: #fbcb09;
+    height: 20px;
+     float: left;
+}
+.rate-stars-box img{
+    position: absolute;
+    left: 0px;
+    
+}
+
+.indicate-rate-box{
+     position: absolute;
+    left: 40px;
+    background: #1c465e ;
+    top:-20px;
+    width: 20px;
+    height: 15px;
+    float: left;
+    color: #FFFFFF;
+}
+.indicator-text{
+     background: #1c465e ;
+     text-align: center;
+    position: absolute;
+    left: 0px;
+    z-index: 20;
+     width: 20px;
+    height: 15px;
+    float: left;
+    color: #FFFFFF;
+}
+.indicator-arrow{
+    
+     position: absolute;
+    left: 6px;
+     background: #1c465e ;
+     top:11px;
+    width: 8px;
+    height: 8px;
+    
+    transform: rotate(45deg);
+-ms-transform: rotate(45deg); /* IE 9 */
+-webkit-transform: rotate(45deg); /* Safari and Chrome */
+z-index:10;
+}
+.left-rate, .right-rate {float: left; cursor: pointer;
+
+margin-left: 10px;
+    margin-right: 10px;}
+
+
+
+@font-face {
+    font-family: 'myriad_pro_lightbold';
+    src: url('http://canada.soscampus.com/wp-content/themes/sos/font/myriadpro-semibold-webfont.eot');
+    src: url('http://canada.soscampus.com/wp-content/themes/sos/font/myriadpro-semibold-webfont.eot?') format('embedded-opentype'),
+        url('http://canada.soscampus.com/wp-content/themes/sos/font/myriadpro-semibold-webfont.woff') format('woff'),
+        url('http://canada.soscampus.com/wp-content/themes/sos/font/myriadpro-semibold-webfont.ttf') format('truetype'),
+        url('http://canada.soscampus.com/wp-content/themes/sos/font/myriadpro-semibold-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'myriad_pro_lightregular';
+    src: url('http://canada.soscampus.com/wp-content/themes/sos/font/myriadpro-light-webfont.eot');
+    src: url('http://canada.soscampus.com/wp-content/themes/sos/font/myriadpro-light-webfont.eot?') format('embedded-opentype'),
+        url('http://canada.soscampus.com/wp-content/themes/sos/font/myriadpro-light-webfont.woff') format('woff'),
+        url('http://canada.soscampus.com/wp-content/themes/sos/font/myriadpro-light-webfont.ttf') format('truetype'),
+        url('http://canada.soscampus.com/wp-content/themes/sos/font/myriadpro-light-webfont.svg') format('svg');
+
+}
+@font-face {
+    font-family: 'myriadboldnormal';
+    src: url('http://canada.soscampus.com/wp-content/themes/sos/font/ufonts.com_myriadbold-webfont.eot');
+    src: url('http://canada.soscampus.com/wp-content/themes/sos/font/ufonts.com_myriadbold-webfont.eot?') format('embedded-opentype'),
+        url('http://canada.soscampus.com/wp-content/themes/sos/font/ufonts.com_myriadbold-webfont.woff') format('woff'),
+        url('http://canada.soscampus.com/wp-content/themes/sos/font/ufonts.com_myriadbold-webfont.ttf') format('truetype'),
+        url('http://canada.soscampus.com/wp-content/themes/sos/font/ufonts.com_myriadbold-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+/*body {margin:0; font:12px "myriad-pro";  background-color:#fff;}*/
+body {margin:0; font:12px "myriad_pro_lightbold"; }
+/* default classes */
+a {text-decoration:none; outline:none;}
+img {border:none; outline:none;}
+
+.clr {clear:both;}
+.left_flo {float:left;}
+.right_flo {float:right;}
+
+html* #container {float:left; width:100%;margin-top:0px; }
+
+#container {width:100%;margin-top:0px; background:#fefefe;}
+.header_outer {width:100%; min-width:1100px; background:url(header_b.jpg) repeat-x top; height:114px;}
+.header_main {margin:0 auto; width:940px; padding:0 20px; min-height:114px;}
+.logo {float:left; width:130px; margin-top:19px;}
+
+.logo_chapter {font:18px "myriad_pro_lightregular"; color:#9bdcff; width:300px}
+.title{float:left; width:163px; margin-top:30px;}
+.logo h1 {margin:0;}
+.header_right {float:right; width:520px;}
+/*.student_log_main {float:right; width:313px;}*/
+.student_log_main {float:right; width:313px;}
+.student_login {float:left; background:url(student_.png) no-repeat top; width:159px; height:37px; text-align:center;}
+a.student_login {display:block;background:url(student0.png) no-repeat 14px; font:13px "myriad_pro_lightbold"; color:#FFF; line-height:37px; text-transform:uppercase;
+                 text-shadow: 0px 1px 0px rgba(50, 120, 159, 1);padding-left:13px;
+color: #fff;}
+/*.language {float:left; margin-left:22px;}*/
+
+.language {float:left; margin-left:22px; width:130px;}
+.language ul{float:left;margin:0px;width:130px;padding-left:0px;}
+.language ul li{float:left; text-decoration:none;list-style:none;}
+#menu-header {float:left;margin:0px;width:130px;padding-left:0px;}
+#menu-header a {font:13px "myriad_pro_lightbold"; color:#9bdcff; margin:0 5px; line-height:37px;} 
+.language ul li  a {font:13px "myriad_pro_lightbold"; color:#9bdcff; margin:0 5px; line-height:37px;} 
+.language ul li  a.active {background: none repeat scroll 0 0 #0D3C55;
+                           border-bottom-left-radius: 3px;
+                           border-bottom-right-radius: 3px;
+                           padding: 6px 10px;
+}
+#menu-header li.current-menu-item a{background:#0d3c55; padding:6px 10px; -webkit-border-bottom-right-radius: 3px;
+                                    -webkit-border-bottom-left-radius:3px;
+                                    -moz-border-radius-bottomright:3px;
+                                    -moz-border-radius-bottomleft:3px;
+                                    border-bottom-right-radius:3px;
+                                    border-bottom-left-radius:3px;}
+.raising { float: left;
+           margin-left: 44px;
+           margin-top: 25px;width:104%}
+.raising h2 {margin:0; font:25px "myriad_pro_lightregular"; color:#9bdcff; font-style:italic;}
+.raising span {color:#FFF;}
+
+
+#banner-pannel {float:left; min-width:1100px; width:100%; min-height:506px; background:url(http://canada.soscampus.com/wp-content/themes/sos/images/mid_line_bg.jpg) repeat-x bottom #f2faff;}
+#banner-pannel2 { min-width:1046px; width:100%; min-height:506px; background:url(http://canada.soscampus.com/wp-content/themes/sos/images/mid_line_bg.jpg) repeat-x bottom #f2faff;}
+
+
+/* profile section start */
+#top_profile{ height:150px; width:350px;}
+#profile_display_pic_container {margin-left:50px; margin-bottom:10px; height:120px; width:120px; background:#d7d7d7; float:left }
+.profile_display_pic {margin-left:10px;  margin-top:10px; height:100px; width:100px;}
+#top_profile_info {height:120px; width:80px; float:right; margin-right:90px; margin-top:10px; font:16px "myriad_pro_lightbold";}
+.profile_edit_button {height:28px; width:100px; margin-top:63px; background:url("http://canada.soscampus.com/wp-content/themes/sos/images/profile_edit_button.png");  cursor:pointer;}
+
+
+
+
+/* volunteer section start */
+#volunteer_mian {margin:0 auto; width:950px;margin-top:0px; }
+.volnt_campus_main {
+
+    float:left; width:238px; height:95px; background:url(http://canada.soscampus.com/wp-content/themes/sos/images/volnt_box_bg.jpg) repeat-x top; border:1px solid #dbeaf3; 
+    -webkit-box-shadow:0px 0px 4px rgba(86, 145, 172, 0.30);
+    -moz-box-shadow:0px 0px 4px rgba(86, 145, 172,  0.30);
+    box-shadow:0px 0px 4px rgba(86, 145, 172,  0.30);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding:1px;
+    text-align:center;
+    font-size:1px;}
+.volnt_campus_main p {margin:0; font: 13px "myriad_pro_lightbold"; color:#273f4b; padding-top:0px;} 					
+.volnt_campus_main img {margin:0 5px;}
+
+.volnt_campus
+{    
+	border-radius: 3px 3px 3px 3px;
+}
+a.volnt_campus {
+    padding: 2px 0px 0px 34px; 
+    font:15px/47px "myriad_pro_lightbold"; 
+    color:#FFF; 
+    text-transform:uppercase;
+    width:197px;
+    height:46px;
+    margin: 5px auto 0px auto;
+    display: block;
+}
+
+
+
+.exam_aid_main {float:left; width:418px; height:95px; background:url(http://canada.soscampus.com/wp-content/themes/sos/images/volnt_box_bg.jpg) repeat-x top; border:1px solid #dbeaf3; 
+                -webkit-box-shadow:0px 0px 4px rgba(86, 145, 172, 0.30);
+                -moz-box-shadow:0px 0px 4px rgba(86, 145, 172,  0.30);
+                box-shadow:0px 0px 4px rgba(86, 145, 172,  0.30);
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                border-radius: 4px; 
+                margin:0 15px;
+                padding:1px;
+                text-align:center;
+                font-size:1px;}
+
+
+.exam_aid_main p {margin:0;margin-top:0px; font: 13px "myriad_pro_lightbold"; color:#0F5A7B; padding-top:0px;} 					
+
+/*.exam_aid {float:left; background:url(images/exam_aid_bg.png) no-repeat top; width:410px; margin:5px; margin-bottom:1px; 
+               -webkit-border-radius: 3px;
+               -moz-border-radius: 3px;
+               border-radius: 3px;
+                           height:47px;}*/
+
+.exam_aid {float:left; width:410px; margin:5px; margin-bottom:1px; 
+           -webkit-border-radius: 3px;
+           -moz-border-radius: 3px;
+           border-radius: 3px;
+           height:47px;
+		   padding-bottom: 5px}
+
+
+a.exam_aid {
+font:15px/47px "myriad_pro_lightbold";margin-top:0px; color:#FFF; text-transform:uppercase;}	
+
+.buttonMargin{
+padding: 5px 0px 5px 0px;
+}
+
+.volnt_trip_main	{float:left; width:238px; height:95px; background:url(http://canada.soscampus.com/wp-content/themes/sos/images/volnt_box_bg.jpg) repeat-x top; border:1px solid #dbeaf3; 
+                  -webkit-box-shadow:0px 0px 4px rgba(86, 145, 172, 0.30);
+                  -moz-box-shadow:0px 0px 4px rgba(86, 145, 172,  0.30);
+                  box-shadow:0px 0px 4px rgba(86, 145, 172,  0.30);
+                  -webkit-border-radius: 4px;
+                  -moz-border-radius: 4px;
+                  border-radius: 4px;
+                  padding:1px;
+                  text-align:center;
+                  font-size:1px;}		
+.volnt_trip_main p {margin:0; font:13px "myriad_pro_lightbold"; color:#273f4b; padding-top:0px;margin-top:0px;margin-bottom:0px;} 					
+.volnt_trip_main img {margin:0 5px;}
+
+.volnt_trip {float:left;  width:230px; margin:0px; margin-bottom:1px; 
+             -webkit-border-radius: 3px;
+             -moz-border-radius: 3px;
+             border-radius: 3px;
+             height:47px;}	
+a.volnt_trip {background:url(http://canada.soscampus.com/wp-content/themes/sos/images/trip.png) no-repeat 10%; margin-top:0px;font:15px/47px "myriad_pro_lightbold"; color:#FFF; text-transform:uppercase;}
+
+.mid_content_main {float:left; min-width:1100px; width:100%; background:url(http://canada.soscampus.com/wp-content/themes/sos/images/mid_body_bg.jpg) repeat-x top; min-height:530px;}
+.mid_content {margin:0 auto; width:940px;}
+.mid_cont_left {float:left; width:600px; margin-top:64px;}
+.mid_cont_left h2 {margin:0; font:25px "myriad_pro_lightbold"; color:#494949;}
+.mid_cont_left span {font:25px "myriadboldnormal";color:#17475f;}
+.mid_cont_rt {float:right; width:262px; margin:44px 0 16px 0; background:url(http://canada.soscampus.com/wp-content/themes/sos/images/back_trans_frame.png) no-repeat top; min-height:107px; padding:10px 20px;}
+.mid_cont_rt h3 {margin:0; font: 20px "myriad_pro_lightbold"; color:#17475f; text-transform:uppercase;}
+.mid_cont_rt p {margin:0; font:15px "myriad_pro_lightregular"; color:#494949; padding:10px 0;}
+.password_frame {float:left; width:266px;}
+.profile_password_frame {float:left; width:266px;}
+.password_box {float:left; width:155px;}
+.profile_password_box {float:left; width:110px;}
+.package-code-title{margin-right:40px; font:17px "myriad_pro_lightregular"; color:#494949; padding:10px 0;}
+.password_box input {background:url(http://canada.soscampus.com/wp-content/themes/sos/images/password_bg.jpg) repeat-x top; width:127px; border:0; font: 13px "myriad_pro_lightbold"; color:#103a50; font-style:italic; height:29px;
+                     -webkit-border-radius: 3px;
+                     -moz-border-radius: 3px;
+                     border-radius: 3px;
+                     padding-left:29px;
+                     line-height:29px;
+                     padding-right:5px;}
+                     
+.profile_password_box input {background:url(http://canada.soscampus.com/wp-content/themes/sos/images/password_bg.jpg) repeat-x top; width:80px; border:0; font: 13px "myriad_pro_lightbold"; color:#103a50;  height:29px;
+                     -webkit-border-radius: 3px;
+                     -moz-border-radius: 3px;
+                     border-radius: 3px;
+                     line-height:29px;
+                     padding-left:5px;
+                     padding-right:5px;
+                     text-align:center;}
+                     
+.dowanload {float:left; background:url(http://canada.soscampus.com/wp-content/themes/sos/images/dowanload_bg.jpg) repeat-x top; width:84px; height:29px; -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            text-align:center;}
+.dowanload a {font:12px "myriad_pro_lightbold"; color:#FFF; text-transform:uppercase; line-height:29px;display:block;}	
+
+#news_container_outer {float:left; min-width:1100px; width:100%; background:url(http://canada.soscampus.com/wp-content/themes/sos/images/new-bg.png) repeat top; height:294px;margin-top: 42px;}
+html* #news_container_outer {float:left; width:100%; background:url(http://canada.soscampus.com/wp-content/themes/sos/images/new-bg.png) repeat top; height:296px;margin-top: 42px;}
+.news_main {margin: 20px auto 0;
+            padding-top: 20px;
+            width: 940px;}
+
+#news_main_bg{background:url(http://canada.soscampus.com/wp-content/themes/sos/images/content_main_bg.png) no-repeat;margin: -62px auto auto;width: 1017px;}
+html* #news_main_bg{background:url(http://canada.soscampus.com/wp-content/themes/sos/images/content_main_bg.png) no-repeat;margin: -42px auto auto;width: 1017px;}
+
+
+
+
+.vedio {float:left; background:url(http://canada.soscampus.com/wp-content/themes/sos/images/vedio_bg.jpg) repeat-y top; width:281px; height:257px; -webkit-border-radius:8px;
+        -moz-border-radius:8px;
+        border-radius:8px;
+        border:1px solid #225a78;
+        padding:10px 8px;}	
+.vedio h1 {margin:0; font:20px "myriad_pro_lightbold"; color:#FFF; text-transform:uppercase;} 
+.vedio img {float:left; margin:0 5px 0 0; padding:2px; }		
+
+img.scaled{
+    display: block; 
+    margin: auto; 
+    position: relative; 
+    width: 260px; 
+    height: 146px;
+    padding:1px;
+    border:1px solid #021a40;
+}
+img.scaled1{
+    display:block;
+    margin: auto;
+    position:absolute;
+    width: 39px;
+    height: 39px;
+    padding: 20px;
+    top: 900px;
+    left: 320px;
+}
+#see_more{ float: left;
+           padding-top: 146px;
+           width: 144px;}
+#see_more img{ padding-left: 5px;
+}
+.vedio strong
+{
+    color: #fff;
+    float: left;
+    font: 13px "myriad_pro_lightbold";}
+#vid_share strong{color: #7EABC0;
+                  float: left;
+                  font: 12px "myriad_pro_lightbold";
+                  padding-top: 5px;
+                  text-transform: uppercase;
+                  padding-right:7px; }
+#vid_share
+{
+    float: right;
+    width: 129px;
+}
+
+.news {float:left; width:300px; margin:0px 10px; -webkit-border-radius:8px;
+       -moz-border-radius:8px;
+       border-radius:8px;
+       border:1px solid #225a78;
+       padding:10px 8px;}
+.news h1 {margin:0; font:20px "myriad_pro_lightbold"; color:#FFF; text-transform:uppercase;} 
+.news_cont h2 {margin:0; font:15px "myriad_pro_lightbold"; color:#9bdcff;}
+.news_cont {float:left;width: 280px;	 margin-bottom:5px; border-bottom:1px solid rgba(155, 220, 255,0.8); padding-bottom:5px;}
+.news_cont a {margin:0; font:15px "myriad_pro_lightbold"; color:#9bdcff;}
+.news_cont p {font:12px "myriad_pro_lightbold"; color:#FFF}
+.news_cont span {font:12px "myriad_pro_lightbold"; color:#FFF;}
+.news_cont img {float:left; margin-right:5px; padding:2px; border: 1px solid #C1C1C2;}
+.news_cont strong {float:left; font:12px "myriad_pro_lightbold"; color:rgba(155, 220, 255,0.8); text-transform:uppercase;}
+.news_border {border-bottom:2px dotted black;}
+.news_margin {margin-bottom:5px;}
+.news_date{float:left; font:12px "myriad_pro_lightbold"; color:black;}
+.scroll {height:226px; width:300px; overflow-y:auto; overflow-x:hidden;}
+.right {float:right;}
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 11px;
+	height:11px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    background-color: white;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-color: rgba(155, 220, 255,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(155, 220, 255,0.8); 
+}
+
+.look_stay {float:left; width:281px; background:url(http://canada.soscampus.com/wp-content/themes/sos/images/look_stay_bg.jpg) repeat-y top; height:173px; moz-border-radius:8px;
+            border-radius:8px;
+            border:1px solid #225a78;
+            padding:10px 8px;}
+.look_stay h1 {margin:0; font: 20px "myriad_pro_lightbold"; color:#FFF; text-transform:uppercase;padding-bottom:7px;} 
+.look_stay p {margin:0; font:15px "myriad_pro_lightregular"; color:#FFF; padding:10px 0 5px 0;}
+.look_stay p i{ color: #FFFFFF;
+                font-family: "myriad_pro_lightregular";
+                font-size: 15px;
+                margin: 0;
+                padding: 18px 0 5px;}
+.look_stay ul {margin:0; padding:0; list-style:none;}
+.look_stay li {float:left; padding:5px 2px 0 0; width:137px;}	
+.look_stay label {color:#88b1c4;}
+.email_frame {float:left; width:281px; margin-top:25px;}
+.email_box {float:left; width:214px;}
+.email_box input {background:#FFF; border: 0 none;
+                  border-radius: 3px 3px 3px 3px;
+                  color: #103A50;
+                  font: italic bold 13px/29px "myriad_pro_lightbold";
+                  height: 29px;
+                  padding-left: 34px;
+                  padding-right: 5px;
+                  width: 170px;}
+.sign_up {float:right; background:url(http://canada.soscampus.com/wp-content/themes/sos/images/sign_up.jpg) repeat-x top; width:65px; height:29px; 
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
+          border-radius: 3px;
+          text-align:center;
+          font:12px "myriad_pro_lightbold"; color:#FFF; text-transform:uppercase; display:block;}
+.sign_up a {font:12px "myriad_pro_lightbold"; color:#FFF; text-transform:uppercase; display:block;}	
+.sign_up_button {background:url(http://canada.soscampus.com/wp-content/themes/sos/images/sign_up.jpg) repeat-x top; width:65px; height:29px; text-align:center;
+                 font:12px "myriad_pro_lightbold"; color:#FFF; text-transform:uppercase; display:block;}
+
+.connect {background:url(http://canada.soscampus.com/wp-content/themes/sos/images/look_stay_bg.jpg) repeat-y top; border: 1px solid #225A78;
+          border-radius: 8px 8px 8px 8px;
+          float: left;
+          height: 45px;
+          margin-top: 17px;
+          padding: 10px 8px;
+          width: 284px; } 
+.connect p {color: #FFFFFF;
+            float: left;
+            font: 20px "myriad_pro_lightbold";
+            margin: 0;
+            padding: 10px 14px 0 9px;
+            text-transform: uppercase;}		
+.connect img {float:left; margin:6px 5px 0 0;}			
+
+/* bottom nav start */
+.nav_outer {float:left; min-width:1100px; width:100%; background:url(botm_bdy.jpg) repeat-x top; min-height:227px; margin-top:1px;}
+.nav_inn {margin:0 auto; width:1000px; margin-top:45px;}
+/*.nav_inn .nav {float:left; margin-right:48px;}*/
+
+.nav_inn .nav {float:left; margin-right:45px;}
+
+.nav_inn .nav h3 {margin:0; font: 20px "myriad_pro_lightbold"; color:#164157; text-transform:uppercase;}
+.nav_inn .nav ul {margin:0; padding:0; color:#194D67; font:14px "myriad_pro_lightbold"; line-height:24px; margin-left:18px; }
+.nav_inn .nav a {color:#194D67;}
+.nav_inn .lastnav {margin-right:0;}
+.social_icon {float:right; margin:20px 163px 0 0; width:129px;}
+
+.logos_outer {float:left; min-width:1100px; width:100%; background:url(footer_b.png) repeat-x top; height:180px;}
+.logos_outer .logos {margin:0 auto; width:940px; margin-top:19px;}
+.logos_outer .logos img {margin:0 40px 0 40px; vertical-align: middle;}
+.logos_outer .logos .last {margin-right:0;}
+
+.footer {margin:0 auto; width:100%}
+.copyright {float:left; margin:25px 0px 25px 10%;}
+.copyright p {margin:0; font:12px "myriad_pro_lightbold"; color:#393939; padding-bottom:5px;}
+.copyright span {font:12px "myriad_pro_lightbold"; color:#164157;}
+
+.privacy_policy {float:right; margin:25px 20px 25px 0px;}
+.privacy_policy ul {margin:0; padding:0; list-style:none;}
+.privacy_policy li {float:left; background:#ddebf2; /*padding:5px 9px;*/ margin-left:5px;                   
+                    -webkit-border-radius: 4px;
+                    -moz-border-radius: 4px;
+                    border-radius: 4px;
+                    font:12px "myriad_pro_lightbold";
+}
+.privacy_policy a {color:#164a64;padding: 6px 11px;display:block;}	
+
+
+/* Generic innerpage */
+.menu_outer {float:left; width:100%; height:62px; background:url(menu_bg2.png) repeat-x top left; /*margin-top: -18px; */}
+.menu_outer .topmenu{margin:0 auto; width:940px;}
+.menu_outer .topmenu ul {float:left; margin:0; padding:0;list-style:none;
+font-weight: bold ;
+font-family: myriad_pro_lightbold, sans-serif;
+}
+.menu_outer .topmenu li {text-transform:uppercase;float:left; list-style:none; background:url(menu_sap.png) no-repeat top left;}
+.menu_outer .topmenu li a {font:normal normal normal 15px/46px myriad_pro_lightbold; color:#d6ecf7; height:46px;float:left; /*padding:2px 20px 0 37px;*/ padding-left:2px; margin-left:2px;
+font-weight: bold ;
+font-family: myriad_pro_lightbold, sans-serif;
+
+}
+.menu_outer .topmenu li a:hover {font:normal normal normal 15px/46px myriad_pro_lightbold; color:#d6ecf7; background:url(menu_hov.jpg) repeat-x top left;
+font-weight: bold ;
+font-family: myriad_pro_lightbold, sans-serif;
+
+}
+.menu_outer .topmenu li img {color:#d6ecf7; float:left; margin-right:8px; margin-top:12px;}
+.menu_saperator {background:none!important;}
+.menu_outer .topmenu li.topmenu1 span{background:url("exam_aid.png") no-repeat scroll 10% center transparent;}
+.menu_outer .topmenu li.topmenu2 span{background:url("voluntee.png") no-repeat scroll 8% center transparent;}
+.menu_outer .topmenu li.topmenu3 span{background:url("trips000.png") no-repeat scroll 10% center transparent;}
+.menu_outer .topmenu li.topmenu4 span{background:url("blog0000.png") no-repeat scroll 10% center transparent;}
+.menu_outer .topmenu li.topmenu5 span{background:url("about000.png") no-repeat scroll 10% center transparent;}
+.menu_outer .topmenu li.topmenu6 span{background:url("contact0.png") no-repeat scroll 10% center transparent;}
+.menu_outer .topmenu li.getstarted div{float:left; background:url("http://canada.soscampus.com/wp-content/themes/sos/images/get_started.png") no-repeat scroll 0 10px transparent !important;
+                                       margin-left:14px;
+}
+.menu_outer .topmenu li a.selected{background:url(menu_hov.jpg) repeat-x top left;}
+.menu_outer .topmenu li.getstarted a:hover{background:none;}
+.menu_outer .topmenu li.getstarted span{
+    padding: 2px 15px ;
+}
+.menu-main-menu-container {margin:0 auto; width:940px;}
+.menu-main-menu-container ul {float:left; width:103%; margin:0; padding:0;list-style:none;}
+.menu-main-menu-container li {text-transform:uppercase;float:left; list-style:none; background:url(menu_sap.png) no-repeat top left;}
+.menu-main-menu-container li a {font: 15px/46px "myriad_pro_lightbold"; color:#d6ecf7; height:46px;float:left; /*padding:2px 20px 0 37px;*/ margin-left:2px;}
+.menu-main-menu-container li a:hover {font: 15px/46px "myriad_pro_lightbold"; color:#d6ecf7; background:url(menu_hov.jpg) repeat-x top left;}
+.menu-main-menu-container li img {color:#d6ecf7; float:left; margin-right:8px; margin-top:12px;}
+.menu_saperator {background:none!important;}
+
+/*#menu-item-80 a
+{
+background:url(images/exam_aids.png) no-repeat;background-position:5%;}*/
+
+.get_started {background:url(http://canada.soscampus.com/wp-content/themes/sos/images/get_started.png) no-repeat!important; width:130px; margin-top:10px; padding:2px 0 0 0!important; height:37px; text-transform:uppercase; text-align:center;}
+.get_started {background:url(http://canada.soscampus.com/wp-content/themes/sos/images/get_started.png) no-repeat!important; line-height:22px!important;}
+
+.body_content {margin:0 auto; width:940px;}
+
+/* Jquery tabs panel */
+div.tabscontainer {background:url(http://canada.soscampus.com/wp-content/themes/sos/images/left_menu_bg.jpg) repeat-y top left;}
+div.tabscontainer div.tabs{ list-style:none; width:237px; cursor: pointer; float:left; margin-top: 10px; left: 0px; z-index: 2;}
+div.tabscontainer div.profile_tabs{ padding-top:20px;  list-style:none; width:237px; float:left; margin-top: 10px; left: 0px; z-index: 2;}
+div.tabscontainer div.curvedContainer{margin-left: 259px; min-height:400px;}
+div.tabscontainer div.profile_curvedContainer{margin-left: 259px; height:650px;width:900px;}
+div.tabscontainer div.curvedContainer .tabcontent{display:none; padding:20px; font:12px "myriad_pro_lightbold";padding-top:0px;float:left;}
+div.tabscontainer div.profile_curvedContainer .tabcontent{margin-top:-130px;  display:none; padding:20px; font:12px "myriad_pro_lightbold";padding-top:10px;float:left;}
+div.tabs div.tab{display: block; height:36px; border-bottom:1px solid #d6d6d2; position: relative; color: #3c3c3c;background:#fff;}
+div.tabs div.link{ padding-left:20px; font:13px/36px "myriad_pro_lightbold"; text-transform:uppercase;}
+div.tabs div.tab.selected{color: #ffffff; border-right-color: #aeaeaa;}
+div.tabs div.tab.selected{background: url(left_men.png) repeat-x; border-right-color: #7c7c77;}
+div.tabs div.tab div.arrow{position: absolute; background: url(left_meo.png) no-repeat; height:36px; width: 17px; left: 100%; top: 0px; display: none;}
+div.tabs div.tab.selected div.arrow{display: block;}
+ 
+div.profile_tabs div.tab{display: block; height:36px; border-bottom:1px solid #d6d6d2; cursor: pointer; position: relative; color: #3c3c3c;background:#fff;}
+div.profile_tabs div.link{ padding-left:20px; font:13px/36px "myriad_pro_lightbold"; text-transform:uppercase;}
+div.profile_tabs div.tab.selected{color: #ffffff; border-right-color: #aeaeaa; cursor: pointer;}
+div.profile_tabs div.tab.selected a { color: #ffffff !important;}
+div.profile_tabs div.tab a {  color: #3C3C3C; } 
+div.profile_tabs div.tab.selected{background: url(left_men.png) repeat-x; border-right-color: #7c7c77;}
+div.profile_tabs div.tab div.arrow{position: absolute; background: url(left_meo.png) no-repeat; height:36px; width: 17px; left: 100%; top: 0px; display: none;}
+div.profile_tabs div.tab.selected div.arrow{display: block;}
+
+
+
+
+.tabcontent h2 {float:left;font:30px "myriad_pro_lightbold"; color:#1c465e; margin:0; text-transform:uppercase;position:relative; }
+.tabcontent h3 {float:left;font:18px/26px "myriad_pro_lightregular"; color:#236585; margin:38px 0 0;  font-style:italic;}
+.tabcontent #h3 {float:left;*float:none;font:18px/26px "myriad_pro_lightregular"; color:#236585; margin:38px 0 0; *margin-top:64px; font-style:italic;}
+/*.tabcontent #h3 {float:none;font:bold 18px/26px "myriad_pro_lightregular"; color:#236585; margin:38px 0 0;  font-style:italic;}*/
+
+
+
+.cntnt_box {width:640px; float:left; margin:25px 0;}
+.thumb_box {float:left; background:#f3f3f3; padding:13px;}
+.thumb_box img {width:186px; height:133px; border:1px solid #fff;}
+.thumb_descrip {width:400px; margin-left:20px; float:left;}
+.thumb_descrip p {font:14px/19px "myriad pro"; color:#2f2f2f; margin:0; padding-bottom:15px;}
+
+.list_boxs {float:left; width:680px;}
+.list {float:left; width:179px; background:url(http://canada.soscampus.com/wp-content/themes/sos/images/list_bg.jpg) no-repeat; padding:18px; margin-right:10px;padding-top:11px;}
+.list h3 {font:20px/26px "myriad_pro_lightbold"; color:#1c465e; margin:0; text-transform:uppercase; text-align:center; padding-bottom:17px;}
+.list ul {float:left; width:179px; margin:0; padding:0; list-style:none;}
+.list li {font-family:myriad_pro_lightregular;font-size:15px;float:left; color:#494949;background:url(http://canada.soscampus.com/wp-content/themes/sos/images/list_arrow.png) no-repeat top left; width:159px; padding-left:25px; padding-bottom:10px; list-style:none; margin-left:10px;background-position:0 2px;}
+
+.unlist {float:left; width:179px; background:url(http://canada.soscampus.com/wp-content/themes/sos/images/list_bg.jpg) no-repeat; padding:18px; margin-right:10px;padding-top:11px;}
+.unlist h3 {font: 20px/26px "myriad_pro_lightbold"; color:#1c465e; margin:0; text-transform:uppercase; text-align:center; padding-bottom:17px;}
+.unlist ol {float:left; width:179px; margin:0; padding-left:15px;}
+.unlist li {font-family:myriadboldnormal;float:left; color:#17465e;font-size:15px;width:159px; padding-left:5px; padding-bottom:10px; margin-left:10px;}
+.unlist li span{font-family:myriad_pro_lightregular;float:none; color:#494949; }
+.form_box {float:left; width:154px;}
+.form_box p{margin-top:0px; margin-bottom:0px;}
+.form_box input {width:154px; border:0; font: 13px "myriad_pro_lightbold"; color:#103a50; font-style:italic; padding-left:28px; margin-bottom:6px; line-height:29px; padding-right:5px;}
+.submit {background:url(http://canada.soscampus.com/wp-content/themes/sos/images/dowanload_bg.jpg) repeat-x top; width:84px; height:29px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; text-align:center; cursor:pointer;}
+
+.submit a {font:12px "myriad_pro_lightbold"; color:#FFF; text-transform:uppercase; line-height:29px;padding:7px 20px;}	
+.urname {background:url(http://canada.soscampus.com/wp-content/themes/sos/images/urname.jpg) no-repeat top left; width:175px; height:29px;}
+.email_address {background:url(http://canada.soscampus.com/wp-content/themes/sos/images/email_addrs.jpg) no-repeat top left; width:175px; height:29px;}
+
+.sample_table {float:left; margin:15px 0; width:465px; padding:15px 20px; background:url(http://canada.soscampus.com/wp-content/themes/sos/images/bot_table.jpg) no-repeat top center;}
+.sample_table h3 {font: 20px/26px "myriad_pro_lightbold"; color:#1c465e; margin:0; text-transform:uppercase; padding-bottom:10px;}
+.table_out {float:left; width:465px;}
+.table_grid th {font:15px "myriad_pro_lightbold"; color:#fff; text-transform:uppercase; padding:3px;}
+.table_grid td {font:13px "myriad_pro_lightbold"; color:#2f2f2f; padding:8px 3px;}
+.table_grid .hding {background:url(http://canada.soscampus.com/wp-content/themes/sos/images/grid_hding.jpg) repeat-x top left; height:34px; 
+                    -webkit-border-radius:3px;  -moz-border-radius:3px; border-radius:3px;}
+.table_grid .grey {background:#f0f0f0;}
+
+.tabcontent
+{
+    font:14px/19px "myriad pro" !important; color:#2f2f2f;
+}		
+.entry-title
+{
+    font:24px "myriad_pro_lightregular";
+    color:#1c5676;
+    padding-top:10px;
+    line-height:0px;
+}		
+
+
+.search-title{
+    font:24px "myriad_pro_lightregular";
+    color:#1c5676;
+
+}
+
+.archive-title{
+    font:24px "myriad_pro_lightregular";
+    color:#1c5676;
+
+}
+
+.tag-title{
+    font:24px "myriad_pro_lightregular";
+    color:#1c5676;
+
+}
+
+#post-content a{
+    color:#537683;
+}	
+
+#post-primary .entry-header a{
+    color:#537683;
+    font:16px "myriad_pro_lightregular";
+
+}	
+
+.entry-date{
+    color:#537683;
+    font:14px "myriad_pro_lightregular";
+}
+
+.by-author{
+    color:#494a4a;	
+    font:14px "myriad_pro_lightregular";
+}
+
+
+.widget-title{
+    color:#1c5676;
+    margin-top:0px;
+    font:20px "myriad_pro_lightregular";
+
+}
+
+.entry-meta{
+    font:15px "myriad_pro_lightregular";
+    margin-bottom:30px;
+}
+
+.entry-meta a{
+    color:#1c5676;
+    font:15px "myriad_pro_lightregular";
+
+}
+
+#post-primary .sep{
+    font:16px "myriad_pro_lightregular";
+
+}	
+
+.post-edit-link
+{
+    display:none;
+}
+
+
+
+#menu-item-91
+{
+    background: url("http://canada.soscampus.com/wp-content/themes/sos/images/get_started.png") no-repeat scroll 0 0 transparent !important;
+    height: 37px;
+    margin-top: 10px;
+    padding: 2px 0 0 !important;
+    text-align: center;
+    text-transform: uppercase;
+    width: 130px;
+
+}
+#menu-item-91 a:hover
+{
+    background:none;
+}
+#menu-item-91 a
+{
+    height: 22px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 126px;
+    margin-top:-12px;
+}
+#menu-item-91 span:hover
+{
+    background:none;
+}
+#menu-item-91 span
+{
+    padding-left:14px;
+}
+.body_content {margin:0 auto; width:940px;}
+
+/* Jquery tabs panel */
+div.tabscontainer div.tabs{list-style:none; width:237px; cursor: pointer; float:left; margin-top: 10px; left: 0px; z-index: 2;padding-left:1px;}
+div.tabscontainer div.curvedContainer{margin-left: 259px; min-height:400px;}
+div.tabscontainer div.curvedContainer .tabcontent{display:none; float:left;padding:20px; font:12px "myriad_pro_lightbold";padding-top:0px;}
+div.tabs div.tab{display: block; height:36px; border-bottom:1px solid #d6d6d2; position: relative; color: #3c3c3c;}
+div.tabs div.link{padding-left:20px; font: 13px/36px "myriad_pro_lightbold"; text-transform:uppercase;}
+div.tabs div.tab.selected{color: #ffffff; border-right-color: #aeaeaa;}
+div.tabs div.tab.selected{background: url(left_men.png) repeat-x; border-right-color: #7c7c77;}
+div.tabs div.tab div.arrow{position: absolute; background: url(left_meo.png) no-repeat; height:36px; width: 17px; left: 100%; top: 0px; display: none;}
+div.tabs div.tab.selected div.arrow{display: block;}
+
+.tab_icon{
+    vertical-align:middle;
+    height:15px;
+    width:15px;
+}
+
+.tabcontent h2 {font:30px "myriad_pro_lightbold"; color:#1c465e; margin:0; text-transform:uppercase;}
+.tabcontent h3 {font: 18px/26px "myriad_pro_lightregular"; color:#236585; margin:38px 0 0;  font-style:italic;float:left;}
+.tabcontent #h3 {float:left;*float:none;font: 18px/26px "myriad_pro_lightregular"; color:#236585; margin:38px 0 0; *margin-top:64px; font-style:italic;}
+/*.tabcontent #h3 {float:none;font:bold 18px/26px "myriad_pro_lightregular"; color:#236585; margin:38px 0 0;  font-style:italic;}*/
+
+.cntnt_box {width:640px; float:left; margin:25px 0;}
+.thumb_box {float:left; background:#f3f3f3; padding:13px;}
+.thumb_box img {width:186px; height:133px; border:1px solid #fff;}
+.thumb_descrip {width:400px; margin-left:20px; float:left;}
+.thumb_descrip p {font:14px/19px "myriad pro"; color:#2f2f2f; margin:0; padding-bottom:15px;}
+
+.list_boxs {float:left; width:680px;}
+.list {float:left; width:179px; background:url(http://canada.soscampus.com/wp-content/themes/sos/images/list_bg.jpg) no-repeat; padding:18px; margin-right:10px;padding-top:11px;}
+.list h3 {font:20px/26px "myriad_pro_lightbold"; color:#1c465e; margin:0; text-transform:uppercase; text-align:center; padding-bottom:17px;}
+.list ul {float:left; width:179px; margin:0; padding:0; list-style:none;}
+.list li {font-family:myriad_pro_lightregular;font-size:15px;float:left; color:#494949;background:url(http://canada.soscampus.com/wp-content/themes/sos/images/list_arrow.png) no-repeat top left; width:159px; padding-left:25px; padding-bottom:10px; list-style:none; margin-left:10px;background-position:0 2px;}
+
+.unlist {float:left; width:179px; background:url(http://canada.soscampus.com/wp-content/themes/sos/images/list_bg.jpg) no-repeat; padding:18px; margin-right:10px;padding-top:11px;}
+.unlist h3 {font:20px/26px "myriad_pro_lightbold"; color:#1c465e; margin:0; text-transform:uppercase; text-align:center; padding-bottom:17px;}
+.unlist ol {float:left; width:179px; margin:0; padding-left:15px;}
+.unlist li {font-family:myriadboldnormal;float:left; color:#17465e;font-size:15px;width:159px; padding-left:5px; padding-bottom:10px; margin-left:10px;}
+.unlist li span{font-family:myriad_pro_lightregular;float:none; color:#494949; }
+.form_box {float:left; width:154px;}
+.form_box input {width:154px; border:0; font:13px "myriad_pro_lightbold"; color:#103a50; font-style:italic; padding-left:28px; margin-bottom:6px; line-height:29px; padding-right:5px;}
+.submit {background:url(http://canada.soscampus.com/wp-content/themes/sos/images/dowanload_bg.jpg) repeat-x top; width:84px; height:29px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; text-align:center;}
+.submit a {font:12px "myriad_pro_lightbold"; color:#FFF; text-transform:uppercase; line-height:29px;padding:7px 20px;}	
+.urname {background:url(http://canada.soscampus.com/wp-content/themes/sos/images/urname.jpg) no-repeat top left; width:175px; height:29px;}
+.email_address {background:url(http://canada.soscampus.com/wp-content/themes/sos/images/email_addrs.jpg) no-repeat top left; width:175px; height:29px;}
+
+.sample_table {float:left; margin:15px 0; width:465px; padding:15px 20px; background:url(http://canada.soscampus.com/wp-content/themes/sos/images/bot_table.jpg) no-repeat top center;}
+.sample_table h3 {font: 20px/26px "myriad_pro_lightbold"; color:#1c465e; margin:0; text-transform:uppercase; padding-bottom:10px;}
+.table_out {float:left; width:465px;}
+.table_grid th {font:15px "myriad_pro_lightbold"; color:#fff; text-transform:uppercase; padding:3px;}
+.table_grid td {font:13px "myriad_pro_lightbold"; color:#2f2f2f; padding:8px 3px;}
+.table_grid .hding {background:url(http://canada.soscampus.com/wp-content/themes/sos/images/grid_hding.jpg) repeat-x top left; height:34px; 
+                    -webkit-border-radius:3px;  -moz-border-radius:3px; border-radius:3px;}
+.table_grid .grey {background:#f0f0f0;}
+
+
+.right_profile_box_top {height:30px; padding-top:10px; padding-bottom:10px; width:340px; background:url(http://canada.soscampus.com/wp-content/themes/sos/images/340-profile-box-top.png) no-repeat top center; }
+.right_profile_box_bottom {margin-bottom:30px; height:40px; padding-bottom:10px; width:340px; background:url(http://canada.soscampus.com/wp-content/themes/sos/images/340-profile-box-bottom.png) no-repeat bottom center; }
+.right_profile_box {width:411px; background:url(http://canada.soscampus.com/wp-content/themes/sos/images/340-profile-box-background.png) repeat-y; }
+.right_profile_box_content{padding-left:20px; width:310px;}
+.right_profile_box_top h2{padding-left:20px; font: 18px/26px "myriad_pro_lightbold"; color:#1c465e; margin:0; text-transform:uppercase; text-align:center; padding-bottom:20px;}
+.right_profile_box_icon_announcements{position:absolute; margin-top:-8px; margin-left:320px;}
+
+.right_profile_box .related-courses a{
+    color:#20809c; font:13px 'myriad_pro_lightbold';}
+
+	
+.profile_box_top {height:40px; padding-top:10px; padding-bottom:10px; width:411px; background:url(http://canada.soscampus.com/wp-content/themes/sos/images/profile_box_top.png) no-repeat top center;}
+.profile_box_bottom {margin-bottom:30px; height:40px; padding-bottom:10px; width:411px; background:url(http://canada.soscampus.com/wp-content/themes/sos/images/profile_box_bottom.png) no-repeat bottom center; }
+.profile_box {width:411px; background:url(http://canada.soscampus.com/wp-content/themes/sos/images/profile_box_background.png) repeat-y; }
+.profile_box_content{padding-left:20px; width:380px; background:url(http://canada.soscampus.com/wp-content/themes/sos/images/profile_box_content.png); }
+.profile_box_top h2{padding-left:20px; font: 18px/26px "myriad_pro_lightbold"; color:#1c465e; margin:0; text-transform:uppercase; text-align:center; padding-bottom:20px;}
+.profile_box_icon_announcements{position:absolute; margin-top:-8px; margin-left:390px;}
+.profile_box .past-exams a {color:green; font:13px 'myriad_pro_lightbold';}
+.profile_box .upcoming-sessions a {color:#b0465f; font:13px 'myriad_pro_lightbold';}
+
+
+.tabcontent
+{
+    font:14px/19px "myriad pro" !important; color:#2f2f2f;
+}
+
+#post-70
+{
+    /*background: url("images/left_menu_bg.jpg") repeat-y scroll 20% top transparent;*/
+
+    width:100%;
+
+}
+.volnt_campus_main .image{
+    margin-top: -12px;
+    padding-top: 0;
+}
+.exam_aid_main .image
+{
+    margin-bottom: 0;
+    margin-left: 6px;
+    margin-top: 29px;
+    position: absolute;
+}
+.volnt_trip_main .image
+{
+    margin-bottom: 0;
+    margin-left: 3px;
+    margin-top: 37px;
+    position: absolute;
+}
+#menu-item-80 span
+{
+    background: url("exam_aid.png") no-repeat scroll 10% center transparent;
+    float: left;
+    /*padding-left: 31px;
+        padding-right: 8px;*/
+}
+#menu-item-79 span
+{
+    background:url("voluntee.png") no-repeat scroll 8% center;
+    float: left;
+
+}
+#menu-item-78 span
+{
+    background: url("trips000.png") no-repeat scroll 10% center transparent;
+    float: left;
+
+}
+#menu-item-77 span
+{
+    background: url("blog0000.png") no-repeat scroll 10% center transparent;
+    float: left;
+
+}
+#menu-item-76 span
+{
+    background: url("about000.png") no-repeat scroll 10% center transparent;
+    float: left;
+
+}
+#menu-item-75 span
+{
+    background: url("contact0.png") no-repeat scroll 10% center transparent;
+    float: left;
+
+}
+
+
+.menu_outer .topmenu li span{
+    display:block;
+    position:relative;
+    height:46px;
+    margin-left:2px;
+    width:auto;
+    padding:2px 20px 0 37px;
+}
+.menu-main-menu-container li span:hover
+{
+    /*background:url(images/menu_hover.jpg) repeat-x top left;*/
+    display:block;
+    position:relative;
+    height:46px;
+    margin-left:2px;
+    width:auto;
+    padding:2px 20px 0 37px;
+}
+
+.menu-main-menu-container li span{
+    display:block;
+    position:relative;
+    height:46px;
+    margin-left:2px;
+    width:auto;
+    padding:2px 20px 0 37px;
+}
+#post-primary{
+    width: 980px;
+    min-width:980px;
+    padding: 10px 20px 0;
+    margin:0 auto;
+
+}
+
+#primary{
+    width: 980px;
+    min-width:980px;
+    padding: 48px 20px 0;
+    margin:0 auto;
+}
+.img1{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/volunter_bottm.jpg) no-repeat top left;
+    height:10px;
+    width:230px;
+    margin:auto;
+    float:left;
+    margin-left:6px;
+}
+.img2
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/exam_aid_bottom.jpg) no-repeat top left;
+    width:408px !important;
+}
+.img3
+{
+    margin-left:14px;
+    width:213px !important;
+    height:6px;
+}
+.banner-wrapper
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/bannerExamAID2.jpg) no-repeat scroll center top;
+    height: 446px;
+    margin-top: 48px;
+    position: relative;
+    width: auto;
+    padding-top:21px;
+}
+
+.contact-wrapper
+{
+    background:#062433;
+    height: 510px;
+    margin-top: 48px;
+    position: relative;
+    width: auto;
+    padding-top:21px;
+}
+
+.banner-top
+{
+    height: 425px;
+    margin:auto;
+    width: 942px;
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/banner-top.png) no-repeat; 
+    padding-top:21px;
+}
+.banner-top-left
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/banner-left.png) no-repeat;
+	background-size:100% 100%;
+    float: left;
+    height: 360px;
+    margin-left: 21px;
+    width: 523px;
+    padding-top:21px;
+}
+.banner-middle
+{
+    /*background:url(images/banner-img.png) no-repeat;*/
+    height: 307px;
+    margin: auto;
+    width: 481px;
+}
+.banner-top-right
+{
+    float:right;
+}
+.banner-button
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/step-bg.png) no-repeat;
+
+    height: 80px;
+    width: 380px;
+    margin-top: 10px;
+
+}
+.get-started-btn
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/get-started-button.png) no-repeat;
+    height: 80px;
+    margin: 25px auto auto;
+    width: 240px;
+    color:#fff;
+    cursor:pointer;
+}
+.get-started-btn:hover
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/get-started-button-hover.png) no-repeat;
+    height: 80px;
+    margin: 25px auto auto;
+    width: 240px;
+    color:#fff;
+    cursor:pointer;
+
+}
+.right-heading
+{
+    color:#baecff;
+    width:40px;
+    height:50px;
+    margin-left: 20px;
+    margin-top: 15px;
+    float:left;
+}
+.right-heading h2
+{
+    font-size: 38px;
+    margin: 0;
+    margin-top:-4px;
+}
+
+
+.left-para
+{
+    color: #fff;
+    float: right;
+    font-family:myriad pro;
+    font-size: 18px;
+    font-style: italic;
+    height: auto;
+    margin-right: 37px;
+    margin-top: 29px;
+    width: 281px;
+}
+
+.left-para-contact{
+    color: #fff;
+    float: right;
+    font: 14px "myriad pro";
+    height: auto;
+    margin-right: 37px;
+    margin-top: 29px;
+    width: 281px;
+}
+
+.left-para-volun
+{
+    color: #9bdcff;
+    float: right;
+
+    font-family:myriad_pro_lightbold;
+    font-size: 18px;
+    font-style: italic;
+    height: auto;
+    margin-right: 37px;
+    margin-top: 29px;
+    width: 281px;
+    margin-top: -20px;
+    margin-bottom:-20px;
+}
+
+.left-para-head
+{
+    color: #FFF;
+    margin-top:20px;
+
+    font-family:myriad pro;
+    font-size: 18px;
+}
+.left-para-head img
+{
+    vertical-align:text-bottom;
+    margin:10px 0 10px 0;
+}
+.left-para-head span
+{
+    margin:10px 0 10px 0;
+}
+.banner-top-left p
+{
+    color:#fff;
+    float:left;
+    margin-left: 20px;
+    font-family: myriad pro;
+    font-size:15px;
+}
+.banner-bottom
+{
+    width:auto;
+
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/gradient-grey-bg.png) repeat scroll center top;
+    border-bottom: 1px solid #DEE1E1;
+}
+.right-text
+{
+    border-right: 1px solid #DEE1E1;
+    float: left;
+    padding-right: 20px;
+    padding-top: 22px;
+    width: 611px;
+    min-height: 180px;
+}
+.banner-bottom-wrapper
+{	position: relative;	
+    margin: auto;
+    width: 78em;
+}
+.right-text span
+{
+    color: #1A5F82;
+    float: left;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: myriad pro;
+    line-height: 29px;
+}
+.right-text p
+{
+    color: #596363;
+    font-family: myriad pro;
+    font-size: 18px;
+    line-height: 29px;
+    margin-bottom:0px;
+}
+
+.right-text p a
+{
+    color:#3086a7;
+
+}
+.guide
+{
+    color: #1A5F82 !important;
+    float: left;
+    border-bottom: 1px dashed;
+    font: 14px "myriad pro" !important;
+    padding-bottom:0px !important;
+}
+.mid_cont_rt1 {
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/download-section-bg.png)repeat-y;
+
+    float: right;
+    height: 164px;
+    min-height: 107px;
+    padding: 26px 20px 10px;
+    width: 262px;}
+.mid_cont_rt1 h3 {margin:0; font:bold 20px "myriad_pro_lightbold"; color:#1a5f82; text-transform:uppercase;}
+.mid_cont_rt1 p {margin:0; font: 16px "myriad pro"; color:#494949; padding:10px 0;}
+.mid-cont-rt1-bg
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/white-box-bg.png) no-repeat;
+
+
+    padding: 10px 20px;
+    width: 262px;
+}
+.password_box1 {float:left; width:180px;}
+.password_box1 input { background:url(http://canada.soscampus.com/wp-content/themes/sos/images/input-box-bg.png);width:170px; border:0; font:bold 13px "myriad_pro_lightbold"; color:#1a5f82; font-style:italic; height:29px;
+                       -webkit-border-radius: 3px;
+                       -moz-border-radius: 3px;
+                       border-radius: 3px; 
+                       padding-left:29px;
+                       line-height:29px;
+                       padding-right:5px;}
+.dowanload1 {float:right; background:url(http://canada.soscampus.com/wp-content/themes/sos/images/dowanload_bg.jpg) repeat-x top; width:84px; height:29px; -webkit-border-radius: 3px;
+             -moz-border-radius: 3px;
+             border-radius: 3px;
+             text-align:center;}
+.dowanload1 a {font:12px "myriad_pro_lightbold"; color:#FFF; text-transform:uppercase; line-height:29px;display:block;}	
+
+.banner-heading
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/blue-nav-bg.png) no-repeat top;
+    float: left;
+    height: 40px;
+    margin: auto auto 35px auto;
+    width: 600px;
+}
+.main-banner-content
+{
+    margin:auto;
+    width:933px;
+    height:auto;
+}
+.srchcat {float:left; width:155px;}
+
+.banner-heading-right select { 
+    width: 213px !important; border:0; font:bold 13px "myriad_pro_lightbold"; color:#1a5f82; font-style:italic;
+    -webkit-border-radius: 3px;
+
+
+    padding-bottom: 5px;
+    padding-left: 25px;
+    padding-top: 5px;
+}
+
+.select {
+
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/serach-button.png)no-repeat;
+    color: #103a50;
+    overflow: hidden;
+    padding-bottom: 8px;
+    padding-left: 28px;
+    padding-top: 8px;
+    position: absolute;
+    width: 194px;
+    font-size: 13px;
+}
+
+.banner-heading-right option
+{
+    padding-left: 28px;
+    color: #103a50;
+    width: 150px;
+    font-size: 13px;
+}
+.banner-heading-right
+{
+    /*background:url(images/password_bg.jpg) no-repeat top;*/
+    float:right;
+    margin-top: 4px;
+    width: 219px;
+}
+.banner-heading-left
+{
+    float:left;
+    color:#fff;
+    font-size: 23px;
+    margin-left: 10px;
+    margin-top: 6px;
+    margin-bottom:20px;
+}
+
+.lady-img-bg
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/lady-image-bg.png) no-repeat top;
+    float: left;
+    height: 150px;
+    width: 107px;
+}
+.lady-img-bg1
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/lady-image-bg-1.png) no-repeat top;
+    float: left;
+    height: 175px;
+    width: 107px;
+}
+.mid-bg
+{
+    /*background:url(images/lady-image-1.png) no-repeat top;*/
+    float: left;
+    height: 102px;
+    margin-top: 7px;
+    padding-bottom: 16px;
+    padding-right: 9px;
+    padding-left:9px;
+    width: 91px;
+}
+.mid-bg2
+{
+    /*background:url(images/lady-image-11.png) no-repeat top;*/
+    float: left;
+    height: 123px;
+    margin-top: 12px;
+    padding-bottom: 16px;
+    padding-right: 9px;
+    padding-left:9px;
+    width: 91px;
+}
+.mid-bg1
+{
+    /*background:url(images/lady-image-2.png) no-repeat top;*/
+    float: left;
+    height: 123px;
+    margin-top: 12px;
+    padding-bottom: 16px;
+    padding-right: 9px;
+    padding-left:9px;
+    width: 91px;
+}
+.hidden
+{
+    float:left;
+    height:100px;
+    width:600px;
+}
+.friends
+{
+    color: #FFFFFF;
+    float:left;
+    margin-bottom: 0;
+    margin-left: 16px !important;
+    margin-right: 6px;
+    margin-top: 0;
+    padding-top:10px;
+}
+.xx
+{
+    color: #FFFFFF !important;
+    font-size: 14px;
+    margin: 10px 16px !important;
+}
+.tutors
+{
+    color:#17475f !important;
+    text-align:center;
+    border-bottom:1px solid #c0cdd3;
+    margin-left:15px;
+}
+.share-buttons
+{
+    margin:0 0 0 4px;
+    float:left;
+}
+.optional
+{
+    color: #FFFFFF;
+    margin-bottom: 0;
+    margin-left: 17px !important;
+    margin-right: 0;
+    margin-top: 0;
+    font-style:italic;
+    float:left;
+    padding-top:10px;
+}
+.register
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/register-now-button.png) no-repeat;
+    float: right;
+    height: 26px;
+    margin-right: 9px;
+    margin-top: 6px;
+    width: 102px;
+}
+.main-banner-content-right 
+{
+    border-left: 1px solid #DEE1E1;
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/rightside.png) repeat-y;
+    margin-top: -2px;
+    float:right;
+}
+.right-sidebar
+{
+    float: right;
+    margin-left: 15px;
+    width: 287px;
+    margin-top: 20px;
+}
+.right-sidebar p
+{
+
+    color:#424242;
+
+    margin-left:7px;
+}
+.tutors1 
+{
+
+    float:right;
+    width:280px;
+    margin-bottom:20px;
+}
+.tutors-bg
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/white-box-bg.png) no-repeat;
+
+    padding: 30px 30px 30px 2px;
+    width: 303px;	
+    float:left;
+}
+.right_tutors
+{
+    border-bottom: 1px dashed #1B5F83;
+    color: #17475F !important;
+    margin-bottom: 0 !important;
+    margin-left: 22px;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+    text-align: center;
+    font-size:14px;
+}
+.look_stay_outer
+{
+    margin-bottom:20px;
+    float:left;
+}
+.course_code
+{
+    font-family: 'myriad_pro_lightregular';
+    font-size:13px;
+    color:#494949;
+    line-height:25px;
+    margin-left:15px;
+}
+.trip-heading
+{
+    color:#1A5F82;
+    font-size:20px;
+    margin-left: 4px !important;
+}
+.meet-tutor-back
+{
+    float: left;
+    padding: 17px 0;
+    padding-bottom:0px;
+    width: 265px;
+}
+.meet-tutor
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/meet-headings-bg-left.png) no-repeat;
+
+    float:left;
+    color: #17475F;
+    height: 27px;
+    padding-left: 18px;
+    padding-top: 13px;
+    width: 112px;
+    cursor:pointer;
+}
+
+.students-testimonials
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/white-box-bg.png) no-repeat;
+    padding-left: 18px;
+    padding-top: 3px;
+}
+
+.students-testimonials h3
+{
+    color:#1A5F82;
+    font-size:20px;
+    margin-left: 4px !important;
+}
+
+.trip-heading1
+{
+    color: #1A5F82;
+    font-size:18px;
+    border-bottom:1px dashed;
+}
+.trip-back
+{ 
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/white-box-bg.png) no-repeat;
+    padding-left: 18px;
+    padding-top: 3px;
+}
+#trip
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/go-on-trip-button.png) no-repeat;
+    border: 0 none;
+    height: 32px;
+    margin-left: 59px;
+    width: 155px;
+    cursor:pointer;
+}
+.mountain-bg
+{
+    float: left;
+    padding: 5px;
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/mountain-img-bg.png) no-repeat;
+}
+.quote-bg
+{
+    padding-left: 19px;
+    width: 254px;
+}
+.meet-tutor-right
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/meet-headings-bg-right.png) no-repeat;
+    float:left;
+}
+.right-text-toggle
+{
+
+    width: auto;
+    display:none;
+    color: #596363;
+    font-family: myriad pro;
+    font-size: 18px;
+    line-height: 29px;
+    float:left;
+    width: 607px;
+    margin-top:0px;
+    padding-bottom: 33px !important;
+}
+.meet-tutor p
+{
+    color: #1B5F83;
+    border-bottom: 1px dashed #1B5F83;
+    margin: 0 25px 0 0;
+}
+.signup-heading
+{
+    color:#3A6178;
+    font-weight:bold;
+    font-size:26px;
+}
+.signup-paragraph1
+{
+    font: italic 18px/26px Trebuchet MS;
+    color:#3A6178;
+}
+.signup-paragraph2
+{
+    font-size:13px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#333333;
+}
+.form-heading
+{
+    font-size:18px;
+    color:#3A6178;
+}
+.bullet1
+{
+    background: url("http://canada.soscampus.com/wp-content/themes/sos/images/circle-letter-1.png") no-repeat scroll 0 0 transparent;
+    line-height: 28px;
+    list-style: none outside none;
+    padding-left: 33px;
+}
+.bullet2
+{
+    background: url("http://canada.soscampus.com/wp-content/themes/sos/images/circle-letter-2.png") no-repeat scroll 0 0 transparent;
+    line-height: 28px;
+    list-style: none outside none;
+    padding-left: 33px;
+}
+.bullet3
+{
+    background: url("http://canada.soscampus.com/wp-content/themes/sos/images/circle-letter-3.png") no-repeat scroll 0 0 transparent;
+    line-height: 28px;
+    list-style: none outside none;
+    padding-left: 33px;
+
+}
+.regsiter-data
+{
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-weight:bold;
+    font-size:13px;
+    color:#3A6178;
+    padding:5px;
+}
+.regsiter-data1
+{
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:13px;
+    color:#3A6178;
+    padding:5px;
+}
+.star
+{
+    color:#FF0000;
+}
+.clearform
+{
+    color: #1B5F83;
+    border-bottom: 1px dashed #1B5F83 !important;
+    cursor:pointer;
+    border:0;
+    background:none;
+    padding:0;
+    font-weight:bold;
+    margin-left:20px;
+}
+.submit-button
+{
+    vertical-align:middle;
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/submit-button.png) no-repeat;
+    width:104px;
+    height:39px;
+    cursor:pointer;
+    border:0;
+}
+
+.search-button
+{
+    vertical-align:middle;
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/search-button.png) no-repeat;
+    width:102px;
+    height:39px;
+    cursor:pointer;
+    border:0;
+}
+
+.contact-button
+{
+    vertical-align:middle;
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/contact-submit-button.png) no-repeat;
+    width:104px;
+    height:39px;
+    cursor:pointer;
+    border:0;
+}
+
+.cancel-button
+{
+
+    vertical-align:middle;
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/cancel_button.png) no-repeat;
+    width:104px;
+    height:39px;
+    cursor:pointer;
+    border:0;
+}
+.choose-file
+{
+    /*background:url(images/choose-file.png) no-repeat;
+    width:76px;
+    height:23px;
+    cursor:pointer;
+    border:0;*/
+    position:absolute;
+    opacity:0;
+}
+.bullet
+{
+    float:left;
+}
+.volunteer-back
+{
+    background: url("http://canada.soscampus.com/wp-content/themes/sos/images/volunteer-bg.jpg") no-repeat scroll 0 0 transparent;
+    padding: 10px 30px;
+}
+.form-table
+{
+    margin-left:25px;
+}
+.form-table td
+{
+    padding: 4px 5px;
+}
+.form-top-content
+{
+    background: url("http://canada.soscampus.com/wp-content/themes/sos/images/form-top-cap.jpg") repeat-y scroll 0 0 transparent;
+    margin: 0;
+    padding: 2px 0 0 0px;
+    width: 900px;
+    float:left;
+}
+.form-mid-content
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/form-middle-cap.jpg) repeat;
+    width:900px;
+    float:left;
+}
+.form-bottom-content
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/form-bottom-cap.jpg) repeat-y;
+    width:900px;
+    height:8px;
+    margin-bottom:10px;
+    float:left;
+}
+.bullets
+{
+    padding-left:25px;
+}
+.signup-form
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/page-bg.jpg) repeat-y;
+    padding:20px;
+    float:left;
+    margin-bottom:20px;
+}
+.volunteer-content
+{
+    width:850px;
+}
+span.fakefile {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+input.resume {
+    position: relative;
+    text-align: right;
+    -moz-opacity:0 ;
+    filter:alpha(opacity: 0);
+    opacity: 0;
+    z-index: 2;
+    cursor:pointer;
+}
+span.fileinputs {
+    position: relative;
+}
+.optional1
+{
+    font-size:13px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#333333;
+    margin-left:5px;
+    vertical-align:bottom;
+}
+
+
+.register-main
+{
+    float:left;
+    margin-bottom: 30px;
+}
+.register-main p
+{
+    font:14px/19px "myriad pro" !important;
+    margin:0px;
+}
+.register-wrapper
+{font-family:Arial, Helvetica, sans-serif;
+    margin-bottom:50px;
+    margin-top: 52px;
+    float:left;
+}
+.register-main h1
+{
+    color:#164861;
+    font-size: 29px;
+}
+.reg-tab
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/registeration-box_bg.jpg) no-repeat;
+    width:227px;
+
+    float:left;
+    margin-right: 8px;
+}
+.loadingdiv
+{
+	font-family: myriad_pro_lightbold;
+    float: left;
+    text-align: left;
+    width: 193px;
+    padding-left: 13px;
+    padding-top:6px;
+    height:22px;
+    padding-right: 5px;
+}
+.reg-tab-top h3
+{
+    margin:0px;
+}
+.reg-tab-top h2
+{
+    margin:0px;
+    color:#164861;
+    font-size: 21px;
+}
+.register-main h2
+{
+    margin:0px;
+    color:#164861;
+    font-size: 21px;
+}
+.register-main h3
+{
+    color: #246487;
+    font-family: myriad pro;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: normal;
+}
+.reg-tab-list a
+{
+/*    background:url(images/info-icon.jpg) right no-repeat;*/
+    color: #2F2F2F;
+    float: left;
+    font-weight: bold ;
+font-family: myriad_pro_lightbold, sans-serif;
+    text-align: left;
+	font-size: 15px;
+    width: 193px;
+    padding-left: 13px;
+    padding-top:6px;
+    height:22px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.reg-tab-list a.tabactive
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/rollover-bg_active.jpg)no-repeat;
+    color: #FFFFFF;
+
+}
+
+.reg-tab-list a.tabactive1
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/blue-nav.jpg)no-repeat;
+    height: 38px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+#reg-tab-list2 a
+{
+    height: 38px;
+    margin-bottom: 9px;
+}
+
+
+.reg-tab-list ul
+{
+    padding:0px;
+    margin-top: 20px;
+}
+.reg-tab-list li
+{
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+.reg-tab-list li a
+{
+    color:#2f2f2f;
+}
+.reg-tab-img
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/numbering-button-active.jpg) no-repeat;
+    color: #FFFFFF;
+    font-size: 28px;
+    height: 49px;
+
+    padding: 9px 9px 9px 14px;
+    width: 47px;
+}
+.reg-tab-top
+{
+    margin-left: 28px;
+}
+
+#no-courses-info {
+	display:none;
+}
+#no-courses-info p {
+	margin-left:10px;
+	font-size:21px;
+}
+
+#no-courses-info p b {
+	color:#1A5F82;
+	font-size:32px;
+}
+.reg-tab-list
+{
+    float: left;
+    margin-left: 11px;
+    margin-top: 20px;
+}
+.reg-tab-list li.active a
+{
+    font-size: 16px;
+}
+.reg-button-hid
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/register-button.jpg) no-repeat;
+    border: medium none;
+    color: #FFFFFF;
+    float: right;
+    font-family: myriad pro;
+    font-size: 14px;
+    height: 29px;
+    padding-bottom: 3px;
+    padding-left: 29px;
+    width: 97px;
+}
+.reg-button-active
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/register-button_active.jpg) no-repeat;
+    border: medium none;
+    color: #FFFFFF;
+    float: right;
+    font-family: myriad pro;
+    font-size: 14px;
+    height: 29px;
+    padding-bottom: 3px;
+    padding-left: 29px;
+    width: 97px;
+    margin-top: 20px;
+}
+
+
+.cart-button-hid
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/add-to-cart-hid.png) no-repeat;
+    border: medium none;
+    color: #FFFFFF;
+    float: right;
+    font-family: myriad pro;
+    font-size: 15px;
+    height: 29px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 0;
+    width: 115px;
+}
+.cart-button-active
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/add-to-cart.png) no-repeat;
+    border: medium none;
+    color: #FFFFFF;
+    float: right;
+    font-family: myriad pro;
+    font-size: 15px;
+    height: 29px;
+	cursor:pointer;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    width: 115px;
+    margin-top: 20px;
+}
+.registered_button
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/add-to-cart.png) no-repeat;
+    border: medium none;
+    color: #FFFFFF;
+    float: right;
+    font-family: myriad pro;
+    font-size: 15px;
+    height: 29px;
+	cursor:pointer;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    width: 115px;
+    margin-top: 20px;
+}
+
+.reg-cart
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/your-cart_box_active.jpg) no-repeat;
+
+    padding: 1px 16px 16px;
+    width: 200px;
+}
+.yourcart-txt1
+{
+    //background:url(http://canada.soscampus.com/wp-content/themes/sos/images/your-cart_box_active.jpg) no-repeat;
+    margin-left: -32px;
+    padding: 1px 16px 16px;
+    width: 200px;
+    background-color: #EDEDED;
+    margin-bottom: 9px;
+    padding: 7px 16px 16px;
+}
+.inactive .reg-tab-img
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/numbering-button.jpg)no-repeat;
+}
+.inactive .reg-tab-top h2
+{
+    color:#bebebe;
+}
+.inactive .reg-tab-top h3
+{
+    color:#bebebe;
+}
+.inactive .reg-tab-list
+{
+    display:none;
+}
+.yourcart
+{
+    font-weight: bold !important;
+
+    margin-top: 18px !important;
+    width: 202px;
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/your-cart_box.jpg) no-repeat;
+}
+.yourcart-active
+{
+    font-weight: bold !important;
+    margin: 0;
+    padding-top: 4px;
+}
+.yourcart-txt
+{
+    padding-right: 10px;
+    padding-top: 13px;
+}
+#session-para
+{
+    float:left;
+}
+
+.content_extra
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/registeration-box_bg.jpg) no-repeat;
+    float: left;
+    margin-top: 20px;/*134*/
+    padding-left: 19px;
+    padding-right: 19px;
+    display:none;
+    width: 188px;
+}
+.content_extra h3
+{
+    font-style: normal;
+    font-weight: bold;
+    padding-top: 8px;
+}
+
+#reg-tab-list1 
+{
+
+    margin-top:19px;
+
+}
+.reg-tabs-step2 a
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/info-icon.jpg) right no-repeat;
+}
+.reg-tabs-step2 a:hover
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/info-icon-active.jpg) right no-repeat;
+    color:#2F2F2F;
+}
+.reg-tab-list a.tabactive:hover{
+    background: url("http://canada.soscampus.com/wp-content/themes/sos/images/rollover-bg_active.jpg") no-repeat scroll 0 0 transparent;
+    color:#fff;
+}
+.details-hid
+{
+
+    float:right;
+    margin-top: 46px;/*81*/
+    width:446px;
+    display:none;
+
+}
+.details-hid-left
+{
+    float: left;
+    height: 197px;
+    width: 10px;
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/left-bg_grey.jpg) no-repeat;
+}
+.details-hid-right
+{
+    float: right;
+    height: 197px;
+    width: 10px;
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/right-bg_grey.jpg) no-repeat;
+}
+.details-hid-mid
+{
+    float: left;
+
+    padding-left: 9px;
+    width: 417px;
+
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/middle-bg_grey.jpg) repeat-x;
+}
+
+.details-hid-mid h2
+{
+    float: left;
+    height: 25px;
+    margin: 12px 11px 0 0;
+}
+.details-hid-mid h3
+{
+    float:left;
+    margin:0px;
+    height: 25px;
+    margin-top:12px;
+}
+.tutor_bg
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/biography-img_bg.png) no-repeat;
+    float:left;
+    padding: 8px 12px 0;
+    height:104px;
+    width:100px;
+}
+.tutor_bg img
+{
+    float:left;
+}
+.tutor1
+{
+    float:left;
+    margin-top:21px;
+
+}
+.tutor-top-img
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/8.95-bg.png) no-repeat;
+    color: #FFFFFF;
+    font-family: myriad pro;
+    font-size: 15px;
+    height: 36px;
+    margin-bottom: -35px;
+    margin-left: -10px;
+    padding-left: 4px;
+    padding-top: 9px;
+    position: relative;
+    width: 36px;
+}
+.tutor-content
+{
+    float: right;
+    font-family: myriad pro;
+    font-size: 15px;
+    font-weight: normal !important;
+    min-height: 121px;
+    padding-top: 6px;
+    width: 271px;
+}
+.tutor-name
+{
+    float:left;
+}
+.tutor-name h2
+{
+    margin:0px;
+}
+.tutor-name h3
+{
+    margin:0px;
+}
+
+.outreach-right-heading
+{
+	padding-right:30px;
+}
+.outreach-right-heading h2
+{
+    color: #FFFFFF;
+    font-size: 26px;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+.main-banner-left-top h3
+{
+    color: #164861;
+    font-size: 21px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.main-banner-left-top p
+{
+    color: #596363;
+    font-family: myriad pro;
+    font-size: 16px;
+
+    margin-bottom: 0;
+}
+.outreach-1
+{
+    float: left;
+
+    margin-top: 26px;
+}
+.outreach-img-bg
+{
+    width:154px;
+    height:130px;
+    padding: 11px;
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/small-image-frame.png) no-repeat;
+    float:left;
+}
+.outreach-right
+{
+    float:left;
+    width:320px;
+    padding-right: 10px;
+}
+.outreach-right h3
+{
+    font-size: 18px;
+}
+.outreach-right h3 a
+{
+    border-bottom:1px dashed #184760;
+}
+.outreach-right h4
+{
+    color: #596363;
+    font-family: myriad pro;
+    font-size: 14px;
+    font-weight:normal;
+    font-style: italic;
+    margin: 2px 0 0;
+}
+.outreach-right h4 span
+{
+    font-weight:bold;
+}
+.trip-2
+{
+    margin-top: 10px;
+    margin-left:0px !important;
+    float:left;
+}
+.share2
+{
+    color: #424242 !important;
+    float: right;
+    font-size: 12px !important;
+}
+
+.main-banner-top
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/outreach-top-header.jpg) no-repeat;
+    float: left;
+
+    margin-top: 35px;
+    width: 942px;
+}
+.main-banner-content-right1 
+{
+    //border-left: 1px solid #DEE1E1;
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/outreach-body-repeater.jpg) repeat-y;
+    margin-top: -2px;
+
+}
+.main-banner-left-top
+{
+    padding-left: 35px;
+}
+.main-banner-top-rept
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/outreach-body-repeater.jpg) repeat-x;
+    float:left;
+}
+
+.main-banner-content-left1 
+{
+    float: left;
+    height: auto;
+    width: 559px;
+    margin-top: 27px;
+}
+.main-banner-content-left
+{
+    float: left;
+    height: auto;
+    width: 559px;
+    margin-top: 27px;
+}
+.right-sidebar1
+{
+    float: right;
+    margin-left: 15px;
+    width: 367px;
+    margin-top: 20px;
+}
+.right-vid-para
+{
+    color: #596363;
+    font-family: myriad pro;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+    float:left;
+}
+.right-sidebar1 h2
+{
+    color: #164861;
+    font-size: 21px;
+    margin: 0;
+    text-transform: uppercase;
+}
+.right-sidebar1 .outreach-img-bg
+{
+    float:right;
+    height: 118px;
+}
+.div-para-right
+{
+    float: left;
+    margin-top: 11px;
+}
+.right-sidebar1 p
+{
+    color: #494949;
+    font-family: myriad pro;
+    font-size: 14px;
+}
+.learn
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/learn-more.png) no-repeat;
+    border: medium none;
+    height: 26px;
+    margin-top: 26px;
+	margin-bottom: 20px;
+    width: 102px;
+}
+.view
+{
+    background: url("http://canada.soscampus.com/wp-content/themes/sos/images/view-more-info.png") no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    cursor: pointer;
+    height: 29px;
+    margin-top: 14px;
+    width: 105px;
+}
+.bottom-div
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/ourtrips-bg.png) no-repeat;
+    float: left;
+    height: 182px;
+
+    margin-top: 20px;
+    padding: 20px 20px 20px 30px;
+    width: 940px;
+}
+.bottom-div h2
+{
+    color: #FFFFFF;
+    font-size: 23px;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+.bottom-div p
+{
+    color:#fff;
+    font-family: myriad pro;
+}
+.main-rpt
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/repeater-body.jpg) repeat-y;
+    margin-top:35px;
+    float:left;
+}
+.main-banner-top1
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/top-header-outreach.jpg) no-repeat;
+    float: left;
+
+    //    margin-top: 35px;
+    width: 942px;
+}
+.bottom-div-1
+{
+    float: left;
+    height: 92px;
+    margin-right: 27px;
+    margin-top: 14px;
+    width: 200px;
+}
+.outreach-wrapper
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/SOS-OutreachTripsV2.png) no-repeat scroll center top;
+    height: 446px;
+    margin-top: 48px;
+    position: relative;
+    width: auto;
+    padding-top:21px;
+}
+
+.volunteer-background{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/bannerVolunteering.jpg) no-repeat scroll center top;
+}
+.outreach-right p
+{
+    line-height:normal;
+    font-size:14px;
+}
+.test-para
+{
+    color: #596363;
+    font-family: myriad pro;
+    font-size: 14px;
+    /*height: 149px;*/
+    margin-top: 17px;
+    padding: 2px 2px 2px 18px;
+    width: 324px;
+    /*background:url(images/TESTIMONIAL.jpg) no-repeat; */
+}
+.get-started-btn1
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/apply_today.png) no-repeat;
+    margin: 25px auto auto;
+    width: 240px;
+    color:#fff;
+    cursor:pointer;
+    height:80px;
+}
+
+.get-started-btn1:hover
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/apply_today.png) no-repeat 10% 100%;
+    height: 80px;
+    margin: 25px auto auto;
+    width: 240px;
+    color:#fff;
+    cursor:pointer;
+}
+.get-started-btn2
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/Volunteer_Today.png) no-repeat;
+    margin: 25px 0 0 0;
+    color:#fff;
+    cursor:pointer;
+    height: 80px;
+    width:300px;
+}
+.get-started-btn3
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/Volunteer_Today2.png) no-repeat;
+    margin: 25px auto auto 0;
+    color:#fff;
+    cursor:pointer;
+    height:50px;
+    width:150px;
+}
+.divider
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/DIVIDER.jpg) no-repeat;
+    float: left;
+    height: 20px;
+    margin-top: 11px;
+    width: 519px;
+}
+.view-more
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/view-more-bg.png) repeat-x;
+    float: left;
+    height: 40px;
+    width: 522px;
+    margin-top: 21px;
+}
+#view-more-btn
+{
+    background: url("http://canada.soscampus.com/wp-content/themes/sos/images/view-more-btn.png") no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    cursor: pointer;
+    float: right;
+    height: 26px;
+    margin-right: 24px;
+    margin-top: 5px;
+    width: 102px;
+}
+.test-para-italic
+{
+    font-style:italic;
+    font-size: 14px !important;
+    padding-right: 20px;
+    margin-top: 23px;
+}
+.test-para-author
+{
+    font-size: 13px !important;
+    padding-right: 17px;
+}
+.test-para-author span
+{
+    font-weight: bold;
+}
+.main-bottom-margin
+{
+    float: left;
+    margin-bottom: 20px;
+}
+.bottom-div-11
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/trips4111.png) no-repeat;
+}
+.bottom-div-11:hover
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/trips4111.png) no-repeat 10% 101%;
+}
+.bottom-div-12
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/trip-experience1.png) no-repeat;
+}
+.bottom-div-12:hover
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/trip-experience1.png) no-repeat 10% 101%;
+}
+.bottom-div-13
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/health-staying-safe1.png) no-repeat;
+}
+.bottom-div-13:hover
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/health-staying-safe1.png) no-repeat 10% 101%;
+}
+.bottom-div-14
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/your-safety1.png) no-repeat;
+}
+.bottom-div-14:hover
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/your-safety1.png) no-repeat 10% 101%;
+}
+
+
+.bottom-div-15
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/OutreachPictureShowButton.png) no-repeat;
+	width:250px;
+	height:221px;
+}
+.bottom-div-15:hover
+{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/OutreachPictureShowButton.png) no-repeat;
+	width:250px;
+	height:221px;
+}
+
+.bottom-div-16
+{
+    background:url(Outreach.png) no-repeat;
+	width:200px;
+	height:200px;
+}
+.bottom-div-16:hover
+{
+    background:url(Outreach.png) no-repeat;
+	width:200px;
+	height:200px;
+}
+
+
+
+.tutor-main-bg
+{
+    float:left;
+    margin-bottom:20px;
+}
+.close
+{
+    cursor: pointer;
+    float: right;
+    height: 16px;
+    margin-right: -14px;
+    margin-top: -5px;
+    padding-left: 7px;
+    text-align: center;
+    width: 16px;
+}
+.close span
+{
+    cursor: pointer;
+    display:block;
+    text-align: center;
+}
+.form-paypal
+{
+    height: 20px;
+    width: 200px;
+}
+.reg-tabs-step2 a
+{
+    height: 38px;
+    margin-bottom: 5px;
+    padding-right: 21px;
+    width: 175px;
+}
+.reg-tabs-step2 a.tabactive
+{
+    background: url("http://canada.soscampus.com/wp-content/themes/sos/images/blue-nav.jpg") no-repeat scroll 0 0 transparent;
+}
+.reg-tabs-step2 a.tabactive:hover
+{
+    background: url("http://canada.soscampus.com/wp-content/themes/sos/images/blue-nav.jpg") no-repeat scroll 0 0 transparent;
+}
+
+
+.profile_change_password_button
+{
+    vertical-align: middle;	
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/change_password_button.png) no-repeat;
+    width:160px;
+    height:38px;
+    cursor:pointer;
+    border:0;
+	margin-bottom:10px;
+}
+
+.profile_curvedContainer label{font:16px/10px "myriad_pro_lightbold"; color:#1c465e;}
+.profile_curvedContainer li{
+
+    list-style-image: none;
+    list-style: none;
+    list-style-type: none;
+    margin-bottom:30px;
+
+}
+
+.profile_box li{ font-size:14px;color:#494949;background:url(http://canada.soscampus.com/wp-content/themes/sos/images/list_arrow.png) no-repeat top left; padding-left:20px;  margin-bottom:0px; list-style:none; margin-left:10px;}
+.profile_box ul{margin:0px; padding-left:0px;}
+
+.right_profile_box li{ font-size:14px;color:#494949;background:url(http://canada.soscampus.com/wp-content/themes/sos/images/list_arrow.png) no-repeat top left; padding-left:20px;  margin-bottom:0px; list-style:none; display:inline;}
+.right_profile_box ul{margin:0px; padding-left:0px;}
+
+.profile_box_icon_upcoming{position:absolute; margin-top:-10px; margin-left:388px;};
+
+.profile_sample_table {float:left; margin:15px 0; width:400px; padding:5px 5px; background:url(http://canada.soscampus.com/wp-content/themes/sos/images/bot_table.jpg) no-repeat top center; }
+.profile_sample_table h3 {font:20px/26px "myriad_pro_lightbold"; color:#1c465e; margin:0; text-transform:uppercase; padding-bottom:10px;}
+.profile_table_out {float:left; width:465px;}
+.profile_table_grid th {width:300px; font:15px "myriad_pro_lightbold"; color:#fff; text-transform:uppercase; }
+.profile_table_grid td {font:13px "myriad_pro_lightbold"; color:#194c75; padding:8px 3px; text-align:center;}
+.profile_table_grid .hding {background:url(http://canada.soscampus.com/wp-content/themes/sos/images/grid_hding.jpg) repeat-x top left; height:30px; 
+                            -webkit-border-radius:3px;  -moz-border-radius:3px; border-radius:3px;}
+.profile_table_grid .grey {background:#f0f0f0;}
+.profile_table_grid .light_grey{background:#f4f4f4;}
+
+.right_profile_box .tag_box{height:70px; width:315px; margin:0; margin-bottom:10px;}
+.right_profile_box .tag{-webkit-border-radius:2px;  -moz-border-radius:2px; border-radius:2px; padding:2px; float:left; margin:2px; margin-bottom:1px; background:#1c5675; color:#FFF; font:12px "myriad_pro_lightbold";}
+.right_profile_box .tag:hover{background-color:#207d99; cursor: hand; cursor: pointer; }
+.right_profile_box .selected_tag{-webkit-border-radius:2px;  -moz-border-radius:2px; border-radius:2px; padding:2px; float:left; margin:2px; margin-bottom:1px; background:#207d99; color:#FFF; font:12px "myriad_pro_lightbold"; }
+
+
+.account-settings{font:14px "myriad_pro_lightbold";}
+input[type="radio"] {margin-left:5px;}
+
+.profile_content_container .email_input{
+    padding:3px;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-bottom:1px solid #c0c0c0;
+    border-left:1px solid #c0c0c0;
+    border-right:1px solid #c0c0c0;
+    border-top:1px solid #c0c0c0;
+    font:18px "myriad_pro_lightregular";
+    width:180px; }
+.profile_content_container label{font:16px "myriad_pro_lightbold"; display:inline-block; width:120px; vertical-align: middle;}
+.profile_content_container textarea{
+    padding:5px;
+    vertical-align:middle;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-bottom:1px solid #c0c0c0;
+    border-left:1px solid #c0c0c0;
+    border-right:1px solid #c0c0c0;
+    border-top:1px solid #c0c0c0;
+    font:16px "myriad_pro_lightbold";
+}
+
+
+.login_button {margin:0px; height:39px; width:102px; background:url("http://www.soscampus.com/wp-content/themes/sos/images/login-button.png"); border:0px; cursor:pointer;}
+.login_button:hover { background:url("http://www.soscampus.com/wp-content/themes/sos/images/login-button-hover.png");}
+.forgotpass_button {margin:0px; height:39px; width:143px; background:url("http://www.soscampus.com/wp-content/themes/sos/images/resetpassword.png"); border:0px; cursor:pointer;}
+.forgotpass_button:hover { background:url("http://www.soscampus.com/wp-content/themes/sos/images/resetpassword2.png");}
+.green-login-button,.login-info input[type=submit] {margin:0px; height:39px; width:102px; background:url("http://www.soscampus.com/wp-content/themes/sos/images/green-login-button.png"); border:0px; cursor:pointer;}
+.login-info input[type=submit]{
+    text-indent: 9999px;
+}
+.green-login-button:hover,.login-info input[type=submit]:hover { background:url("http://www.soscampus.com/wp-content/themes/sos/images/green-login-button-hover.png");}
+.sign-up-button {height:39px; width:102px; background:url("http://www.soscampus.com/wp-content/themes/sos/images/sign-up-button.png"); border:0px; cursor:pointer;}
+.sign-up-button:hover{ background:url("http://www.soscampus.com/wp-content/themes/sos/images/sign-up-button-hover.png");}
+.register-sign-up-button {height:39px; width:102px; background:url("http://www.soscampus.com/wp-content/themes/sos/images/register-sign-up-button.png"); border:0px; cursor:pointer;}
+.register-sign-up-button:hover{ background:url("http://www.soscampus.com/wp-content/themes/sos/images/register-sign-up-button-hover.png");}
+.register-facebook-button{margin-bottom:5px; width:233px; height:40px; background:url("http://www.soscampus.com/wp-content/themes/sos/images/register-facebook-button.png"); border:0px; cursor:pointer;}
+
+
+/* Profile feedback in order to unlock files */
+
+/* You can customize to your needs  */
+.feedback-popup{
+    display: none;
+    background:url("http://www.soscampus.com/wp-content/themes/sos/images/feedback_fixed_background.png");
+	background-size:100% 100%;
+    width:750px;	
+	max-height:630px;
+	overflow-x:hidden;
+    border-radius:0px solid #ddd;
+    float: left;
+    font-size: 1.2em;
+    position: fixed;
+    top: 50%; left: 50%;
+    z-index: 99999;
+    box-shadow: 0px 0px 20px #999; /* CSS3 */
+    -moz-box-shadow: 0px 0px 20px #999; /* Firefox */
+    -webkit-box-shadow: 0px 0px 20px #999; /* Safari, Chrome */
+    border-radius:3px 3px 3px 3px;
+    -moz-border-radius: 3px; /* Firefox */ 
+    -webkit-border-radius: 3px; /* Safari, Chrome */
+    font:16px "myriad_pro_lightbold";
+}
+
+.feedback-popup h2{
+    font:20px "myriad_pro_lightbold";
+}
+
+.feedback-popup p{
+    font:11px "myriad_pro_lightbold";
+    padding-left:10px;
+    padding-right:10px;
+    margin-bottom:5px;
+}
+
+.feedback-category{
+    height:150px; width:160px; float:left; margin-right:30px;
+}
+
+.volunteer-image{
+    height:150px; width:100px; float:left; padding-left:30px; padding-right:30px;
+}
+.volunteer-name
+{
+	max-width:100px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+#tutor-feedback{
+    padding-top:20px; height:192px; border-top: solid 1px #cacaca; width:750px;  
+    font:16px "myriad_pro_lightregular"; 
+}
+#session-feedback
+{
+	float:left;padding-top:20px; border-top: solid 1px #cacaca; width:750px;  
+    font:16px "myriad_pro_lightregular"; 
+}
+.feedback-question
+{
+	float:left;
+	height:120px;
+	margin-bottom:10px;
+	width:334px;
+	padding:8px;
+	margin-left:12px;
+	border:solid 1px #cacaca;
+}
+
+#tutor-feedback textarea{
+    height:104px; width:160px; padding:5px; 
+    resize: none;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border:1px solid #c0c0c0;
+    font:14px "myriad_pro_lightregular"; 
+}
+
+#session-feedback textarea{
+    height:70px; width:300px; 
+	padding:0px; 
+	margin:15px 15px; 
+    resize: none;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border:1px solid #c0c0c0;
+    font:14px "myriad_pro_lightregular"; 
+}
+#session-feedback select{
+	margin:20px 0 0 0;
+} 
+.checkbox-box
+{
+	float:left;
+	margin-top:3px;
+	width:150px;
+	margin-left:10px;
+}
+.checkbox-box input
+{
+	margin-right:15px;
+}
+.checkbox-option
+{
+	margin-top:4px;
+	width:150px;
+}
+#tutor-rating{
+    width:276px; height:25px; padding-top:130px; margin-left:170px;
+}
+.submit-rating
+{
+	background:url("http://www.soscampus.com/wp-content/themes/sos/images/submit-button.png");
+	width: 102px;
+	height: 39px;
+	float:right;
+	border:0;
+	cursor:pointer;
+	margin-top:-11px;
+	margin-right:39px;
+}
+
+#feedback-submit{
+    margin-top:20px; margin-right:20px;
+}
+
+#pic-area{
+    width:220px;
+}
+
+#image-area{
+    width:100px; height:150px; margin-left:10px; margin-right:20px;
+}
+
+.profile-username{
+    font:16px/28px "myriad_pro_lightbold"; color:#1c5676; text-transform:uppercase; 
+}
+
+
+
+.profile-attendances{
+    font:10px  'myriad_pro_lightbold'; color:#639808;
+}
+
+
+#right-widgets{
+    float:right; clear:both;
+}
+
+#left-widgets{
+    width:440px; float:left;
+}
+
+.entry-header{
+    font:14px "myriad_pro_lightbold"; color:#1c5676;
+    margin:0;
+    padding:0;
+}
+
+.entry-content{
+    margin:0;
+    padding:0;
+    font:13px "Arial"; color:#353535;
+}
+
+#post-content{
+    margin-top:5px;
+    border-top:1px solid #1b7da2;
+    padding:20px;
+    background:#ecf0f2;
+    width:600px;
+    float:left;
+    display:block;
+    margin-bottom:50px;
+
+
+}
+
+#blog-posts-container{
+    display:block;
+    float:left;
+    margin-bottom:10px;
+}
+
+#blog-posts-content{
+    margin-top:5px;
+    border-top:1px solid #1b7da2;
+    padding:20px;
+    background:#ecf0f2;
+    width:600px;
+    display:block;
+    margin-bottom:20px;
+}
+
+
+#secondary.widget-area{
+    margin-top:5px;
+    display:block;
+    float:right;
+    width:300px;
+}
+
+#secondary.widget-area a{
+    color:#1c5676;
+}
+
+#secondary.widget-area ul{
+    padding-left:0px;
+}
+
+
+#secondary.widget-area li{
+    background:url(http://canada.soscampus.com/wp-content/themes/sos/images/list_arrow.png) no-repeat top left;
+    padding-left:15px;
+    text-decoration:none;list-style:none;
+    font:14px "myriad_pro_lightregular"; color:#353535;
+}
+
+
+
+.post-featured-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width:600px;
+	height:300px;
+}
+
+#cdfHoverBigTD1{
+z-index: 3;   
+height: 503px;
+background:url("http://laurier.soscampus.com/wp-content/themes/sos/images/BigVolunteering.jpg") no-repeat;
+}
+
+#cdfHoverBigTD2{
+z-index: 4;
+height: 503px;
+background:url("http://laurier.soscampus.com/wp-content/themes/sos/images/BigTutoring.jpg") no-repeat;
+}
+
+#cdfHoverBigTD3{
+height: 503px;
+background:url("http://laurier.soscampus.com/wp-content/themes/sos/images/BigOutreach.jpg") no-repeat;
+}
+
+.cdfInit{
+width: 100%;
+top: 0px;
+} 
+
+.cdfHoverTable{
+position: absolute;
+width: 100%;
+top: 0px;
+z-index: 10;
+}
+
+#cdfHoverBig1{
+z-index: 6;
+}
+
+.cdfHoverBig{
+position: absolute;
+width: 100%;
+top: 0px;
+display:none;
+}
+
+.cdfBanner { 
+position: absolute !important; 
+top: 20px !important; 
+left:50%;
+margin-left:-468px;
+width: 936px !important; 
+z-index: 15}
+
+
+.cdfMH{
+position: relative;
+width: 100%;
+
+}
+
+
+
+.cdfMH1{
+height: 503px;
+background:url("http://laurier.soscampus.com/wp-content/themes/sos/images/cdfmh1.png") no-repeat;
+background-position: right center;
+}
+
+.cdfMH2{
+height: 503px;
+background:url("http://laurier.soscampus.com/wp-content/themes/sos/images/cdfmh2.png") no-repeat;
+}
+
+.cdfMH3{
+height: 503px;
+background:url("http://laurier.soscampus.com/wp-content/themes/sos/images/cdfmh3.png") no-repeat;
+background-position:left center;
+}
+
+
+.entry-content h2{
+    font:22px "myriad_pro_lightregular";
+    color:#1c5676;
+}
+
+#nav-single{
+    font:20px "myriad_pro_lightregular";
+
+}
+
+#nav-single a{
+    color:#1c5676;
+}
+
+.nav-previous{
+    float:left;
+    margin-bottom:40px;
+}
+
+.nav-next{
+    float:right;
+    margin-bottom:40px;
+}
+
+.blog-excerpt{
+    font:13px "Arial"; 
+    color:#353535;
+}
+
+
+.blog-excerpt a{
+    font:14px "myriad_pro_lightregular";
+    color:#1c5676;
+}
+
+
+#post-title h2{
+    font:24px "myriad_pro_lightregular";
+    color:#1c5676;
+    padding-top:6px;
+    line-height:0px;
+}
+
+#post-title a{
+    font:16px "myriad_pro_lightregular";
+    color:#1c5676;
+}
+
+
+#container-404 {height:100%; width:100%;background:#092939; }
+
+#container-login {height:100%; width:100%;background:url(http://canada.soscampus.com/wp-content/themes/sos/images/login-pattern.png); }
+
+#middle-login{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width:1200px;
+    top:18%;
+    font:16px "myriad_pro_lightregular";
+    text-align:center;	
+    margin-top:40px;
+}
+
+#middle-404{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width:340px; padding-top:5%;
+    font:16px "myriad_pro_lightregular";
+    color:#fff;
+    text-align:center;	
+}
+
+
+#middle-404 a{
+    color:#b2dff5;
+}
+
+.four-o-four{
+    font:70px "myriad_pro_lightbold";
+    color:#fff;
+    clear:both;
+}
+
+.search-field{
+    height:29px;
+    padding:2px;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-bottom:1px solid #c0c0c0;
+    border-left:1px solid #c0c0c0;
+    border-right:1px solid #c0c0c0;
+    border-top:1px solid #c0c0c0;
+    font:15px "myriad_pro_lightregular";
+    margin-right:5px;
+}
+
+.message-404{
+    margin-bottom:20px;
+}
+
+/* Login page Style */
+
+fieldset { 
+    border:none; 
+}
+
+
+form.signin .login-textbox span { 
+    display:block;
+}
+
+form.signin p, form.signin span { 
+    color:#999; 
+    font-size:11px; 
+    line-height:18px;
+} 
+
+
+
+
+
+form.signin .login-textbox input ,.login-info input { 
+
+
+    background-color:#fff;
+    border-bottom:1px solid #d6d6d6;
+    border-left:1px solid #d6d6d6;
+    border-right:1px solid #d6d6d6;
+    border-top:1px solid #d6d6d6;
+    color:#254b6a; 
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    font:16px "myriad_pro_lightregular";
+    margin-bottom:5px;
+    /* Remove default */
+
+
+
+}
+
+
+
+input:focus { outline:none;
+              border-color:#0a2032;
+              box-shadow:0px 0px 1pt #4f97d3;}
+
+.register-input,.login-info input{
+    padding:6px 6px 4px;
+    width:200px;
+}
+.login-info label{
+    font-size: 14px;
+}
+.login-info input{
+    font-size: 16px !important;
+    width:175px;
+}
+
+.login-username{	
+    background:url("http://www.soscampus.com/wp-content/themes/sos/images/login_input_icon.png") no-repeat;
+    background-position:left center;
+    background-position:5px;
+    padding:6px 6px 4px;
+    padding-left:22px;
+    width:180px;
+    height:40px;
+
+}
+
+.login-password{
+    background:url("http://www.soscampus.com/wp-content/themes/sos/images/login-lock-icon.png") no-repeat;
+    background-position:left center;
+    background-position:5px;
+    padding:6px 6px 4px;
+    padding-left:22px;
+    width:180px;
+    height:40px;
+}
+#register-dialog .login-password{
+    height:auto;
+	margin:0;
+}
+#register-dialog .forgot-password
+{
+	float: right;
+	margin-bottom: 5px;
+}
+#register-dialog input
+{
+	font:16px "myriad_pro_lightregular";
+}
+.login-vertical-line{
+    height:320px;
+    margin-left:20px;
+    width:1px;
+    background:#dcdcdc;
+    margin-right:25px; float:left;
+}
+
+
+.register-vertical-line{
+    height:400px;
+    margin-left:20px;
+    width:1px;
+    background:#dcdcdc;
+    margin-right:25px; float:left;
+}
+
+#left-login{float:right; margin-top:0px; margin-top:20px;}
+#left-register{float:right; margin-top:0px; }
+
+#right-register{ float:right; width:500px; }
+#right-login{ float:right; width:300px; }
+#login-wrapper{ position:absolute; right:10%;}
+#forgot-wrapper{ position:absolute; left:40%;}
+#register-wrapper{position:absolute; right:26%;}
+
+#sign-up-container{float:left; color:#2c607f; font-size:22px; margin-top:8px;}
+#sign-up-container h2{font:22px "myriad_pro_lightregular"; }
+#register-container{float:left; color:#2c607f; font-size:22px; margin-top:8px;}
+#register-container h2{font:22px "myriad_pro_lightregular"; }
+.register-other-inputs{font-size:14px; margin-top:10px; }
+.register-radio-text{font-size:16px; }
+#left-login p{font-size:15px;  text-aling:left; color:#2c607f;}
+#left-login{width:250px;
+}
+#left-register h2{color:#2c607f; font:18px "myriad_pro_lightregular";   margin-bottom:10px; }
+
+#left-register p{font-size:15px;  text-aling:left; color:#2c607f;}
+#left-register{
+    width:250px;
+}
+#left-login h2{color:#2c607f; font:18px "myriad_pro_lightregular";   margin-bottom:10px; }
+
+#container-login .raising{margin-top:45px;}
+
+.right-register h2{
+    color:#2c607f; font:12px "myriad_pro_lightregular";   margin-bottom:10px; 
+}
+.register-info{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width:200px;
+    top:20%;
+}
+
+.login-info{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 250px;
+    right: 0;
+    margin: auto;
+    width:200px;
+    top:20%;
+}
+
+.right-login h2{
+    color:#2c607f; font:12px "myriad_pro_lightregular";   margin-bottom:10px; 
+}
+.register-login{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width:200px;
+    top:20%;
+}
+
+#register-dialog #register-wrapper{
+    position: relative;
+    right:auto;
+}
+#register-dialog .login-info {
+    position: relative;
+    left:auto;
+    margin: 70px 0px 0px 60px 
+}
+#register-dialog #left-register {
+    float: left;
+	margin-bottom:10px;
+}
+#register-dialog .loader{
+    width:80px;
+    height:10px;
+    background:url("http://canada.soscampus.com/wp-content/themes/sos/images/loader.gif") no-repeat;
+    float: left;
+    margin: 15px 0px 0px 10px;
+    display: none;
+}
+#new-user-notification .cloader{
+    width:12px;
+    height:12px;
+    display: none;
+}
+#register-dialog .info{
+    position: absolute;
+    margin: 10px 0px 0px 120px;
+    display: none;
+    color:#9d4c33;
+}
+#register-dialog .register-sign-up-button,#register-dialog #wp-submit{
+    float: left;
+}
+
+.forgot-password a{font:13px "myriad_pro_lightregular"; color:#2c607f; margin-left:90px;}
+
+#loginform{
+    display: none;
+    font-size: 15px;
+}
+#new-user-notification a{
+  text-decoration: underline;
+  color:blue;
+}
+
+li.your-course-file{
+	background:none;
+}
+
+li.your-course-file a{
+	color:#595959;
+}
+
+li.your-course-file a:hover{
+	opacity: .7;
+    filter:alpha(opacity=70);
+}
+
+td.course-td{
+	font:17px "myriad_pro_lightbold";
+}
+.regpagebtn{
+	float:right;
+	margin-top:20px;
+	display: block !important;
+	width: 97px !important;
+	height: 29px !important;
+	background:url(http://canada.soscampus.com/wp-content/themes/sos/images/register-button_active.jpg) no-repeat;
+	padding-top: 4px !important;
+	padding-right:40px;
+	text-align: center !important;
+	border-radius: 5px;
+	color: white !important;
+	font-family: myriad pro !important;
+	font-size:14px !important;
+	margin-left:90px;
+}.refund { display:inline-block;text-align:center;vertical-align:middle;}li.your-course .refund  a:hover { color:#D54E21;}.refund a {font:12px "myriad_pro_lightbold"; color:#21759B; line-height:18px;display:block;text-decoration:none;margin:0px 10px;}	
+
+#media_intro1{
+	margin-bottom: 0;
+	color : #194c75;
+}
+
+#media_intro2{
+	margin-top: 0;
+	padding-bottom: 4px;
+	border-bottom: 1px solid #ccc;
+	color : #194c75;
+}
+
+.media_intro{
+	color : #1c465e;
+}
+
+#social_media_jump{
+	font-weight: bold;
+	color : #194c75;
+}
+
+#chat-box{
+  padding: 5px 10px 5px;
+  width: 400px;
+  background:url(http://canada.soscampus.com/wp-content/themes/sos/images/chat-bg-image.png) no-repeat transparent;
+  border:none !important;
+}
+
+.title_view {
+	font-family: myriad pro;
+	font-size:30px;
+	line-height:38px;
+	color:#17475f;
+
+}
+.tab_wrap_content {
+  background:url(http://canada.soscampus.com/wp-content/themes/sos/images/tab-view-bg.png) no-repeat transparent;
+  width:670px;
+  padding:1px 20px;
+}
+
+.tab_wrap_content  h3 {
+	font-family: myriad pro;
+	font-size:20px;
+	line-height:26px;
+	color:#17475f;
+}
+.tab_wrap_content  p {
+	font-family: myriad pro;
+	font-size:14px;
+	line-height:20px;
+	color:#2f2f2f;
+    width: 45em;
+}
+
+.tab_wrap_content_chat {
+  background:url(http://canada.soscampus.com/wp-content/themes/sos/images/tab-view-bg.png) no-repeat transparent;
+  width:670px;
+  padding:1px 20px;
+}
+
+.tab_wrap_content_chat  h3 {
+    font-family: myriad pro;
+    font-size:20px;
+    line-height:26px;
+    color:#17475f;
+}
+.tab_wrap_content_chat  p {
+    font-family: myriad pro;
+    font-size:14px;
+    line-height:20px;
+    color:#2f2f2f
+}
